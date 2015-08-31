@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="sumvedshami" created="Mon Aug 31 14:57:50 IST 2015" description="XML To List&lt;User&gt;" guiVersion="3.4.4.P" id="1441038862345" licenseCode="Unlicensed" licenseType="Unknown" modified="Mon Aug 31 14:57:50 IST 2015" modifiedBy="sumvedshami" name="XML_To_List_User_" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/User" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="e6ff7b73-f0fe-41f2-b08f-56243255bb52">
+<Record fieldDelimiter="," name="User" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/User/Id" containerType="SINGLE" label="Id" name="Id" type="string"/>
+<Field __index="1" __sourcePath="{}/User/Username" containerType="SINGLE" label="Username" name="Username" type="string"/>
+<Field __index="2" __sourcePath="{}/User/LastName" containerType="SINGLE" label="LastName" name="LastName" type="string"/>
+<Field __index="3" __sourcePath="{}/User/FirstName" containerType="SINGLE" label="FirstName" name="FirstName" type="string"/>
+<Field __index="4" __sourcePath="{}/User/Name" containerType="SINGLE" label="Name" name="Name" type="string"/>
+<Field __index="5" __sourcePath="{}/User/CompanyName" containerType="SINGLE" label="CompanyName" name="CompanyName" type="string"/>
+<Field __index="6" __sourcePath="{}/User/Division" containerType="SINGLE" label="Division" name="Division" type="string"/>
+<Field __index="7" __sourcePath="{}/User/Department" containerType="SINGLE" label="Department" name="Department" type="string"/>
+<Field __index="8" __sourcePath="{}/User/Title" containerType="SINGLE" label="Title" name="Title" type="string"/>
+<Field __index="9" __sourcePath="{}/User/Street" containerType="SINGLE" label="Street" name="Street" type="string"/>
+<Field __index="10" __sourcePath="{}/User/City" containerType="SINGLE" label="City" name="City" type="string"/>
+<Field __index="11" __sourcePath="{}/User/State" containerType="SINGLE" label="State" name="State" type="string"/>
+<Field __index="12" __sourcePath="{}/User/PostalCode" containerType="SINGLE" label="PostalCode" name="PostalCode" type="string"/>
+<Field __index="13" __sourcePath="{}/User/Country" containerType="SINGLE" label="Country" name="Country" type="string"/>
+<Field __index="14" __sourcePath="{}/User/Latitude" containerType="SINGLE" label="Latitude" name="Latitude" type="number"/>
+<Field __index="15" __sourcePath="{}/User/Longitude" containerType="SINGLE" label="Longitude" name="Longitude" type="number"/>
+<Field __index="16" __sourcePath="{}/User/Address" containerType="SINGLE" label="Address" name="Address" type="string"/>
+<Field __index="17" __sourcePath="{}/User/Email" containerType="SINGLE" label="Email" name="Email" type="string"/>
+<Field __index="18" __sourcePath="{}/User/EmailPreferencesAutoBcc" containerType="SINGLE" label="EmailPreferencesAutoBcc" name="EmailPreferencesAutoBcc" type="boolean"/>
+<Field __index="19" __sourcePath="{}/User/EmailPreferencesAutoBccStayInTouch" containerType="SINGLE" label="EmailPreferencesAutoBccStayInTouch" name="EmailPreferencesAutoBccStayInTouch" type="boolean"/>
+<Field __index="20" __sourcePath="{}/User/EmailPreferencesStayInTouchReminder" containerType="SINGLE" label="EmailPreferencesStayInTouchReminder" name="EmailPreferencesStayInTouchReminder" type="boolean"/>
+<Field __index="21" __sourcePath="{}/User/SenderEmail" containerType="SINGLE" label="SenderEmail" name="SenderEmail" type="string"/>
+<Field __index="22" __sourcePath="{}/User/SenderName" containerType="SINGLE" label="SenderName" name="SenderName" type="string"/>
+<Field __index="23" __sourcePath="{}/User/Signature" containerType="SINGLE" label="Signature" name="Signature" type="string"/>
+<Field __index="24" __sourcePath="{}/User/StayInTouchSubject" containerType="SINGLE" label="StayInTouchSubject" name="StayInTouchSubject" type="string"/>
+<Field __index="25" __sourcePath="{}/User/StayInTouchSignature" containerType="SINGLE" label="StayInTouchSignature" name="StayInTouchSignature" type="string"/>
+<Field __index="26" __sourcePath="{}/User/StayInTouchNote" containerType="SINGLE" label="StayInTouchNote" name="StayInTouchNote" type="string"/>
+<Field __index="27" __sourcePath="{}/User/Phone" containerType="SINGLE" label="Phone" name="Phone" type="string"/>
+<Field __index="28" __sourcePath="{}/User/Fax" containerType="SINGLE" label="Fax" name="Fax" type="string"/>
+<Field __index="29" __sourcePath="{}/User/MobilePhone" containerType="SINGLE" label="MobilePhone" name="MobilePhone" type="string"/>
+<Field __index="30" __sourcePath="{}/User/Alias" containerType="SINGLE" label="Alias" name="Alias" type="string"/>
+<Field __index="31" __sourcePath="{}/User/CommunityNickname" containerType="SINGLE" label="CommunityNickname" name="CommunityNickname" type="string"/>
+<Field __index="32" __sourcePath="{}/User/IsBadged" containerType="SINGLE" label="IsBadged" name="IsBadged" type="boolean"/>
+<Field __index="33" __sourcePath="{}/User/BadgeText" containerType="SINGLE" label="BadgeText" name="BadgeText" type="string"/>
+<Field __index="34" __sourcePath="{}/User/IsActive" containerType="SINGLE" label="IsActive" name="IsActive" type="boolean"/>
+<Field __index="35" __sourcePath="{}/User/TimeZoneSidKey" containerType="SINGLE" label="TimeZoneSidKey" name="TimeZoneSidKey" type="string"/>
+<Field __index="36" __sourcePath="{}/User/UserRoleId" containerType="SINGLE" label="UserRoleId" name="UserRoleId" type="string"/>
+<Field __index="37" __sourcePath="{}/User/LocaleSidKey" containerType="SINGLE" label="LocaleSidKey" name="LocaleSidKey" type="string"/>
+<Field __index="38" __sourcePath="{}/User/ReceivesInfoEmails" containerType="SINGLE" label="ReceivesInfoEmails" name="ReceivesInfoEmails" type="boolean"/>
+<Field __index="39" __sourcePath="{}/User/ReceivesAdminInfoEmails" containerType="SINGLE" label="ReceivesAdminInfoEmails" name="ReceivesAdminInfoEmails" type="boolean"/>
+<Field __index="40" __sourcePath="{}/User/EmailEncodingKey" containerType="SINGLE" label="EmailEncodingKey" name="EmailEncodingKey" type="string"/>
+<Field __index="41" __sourcePath="{}/User/ProfileId" containerType="SINGLE" label="ProfileId" name="ProfileId" type="string"/>
+<Field __index="42" __sourcePath="{}/User/UserType" containerType="SINGLE" label="UserType" name="UserType" type="string"/>
+<Field __index="43" __sourcePath="{}/User/LanguageLocaleKey" containerType="SINGLE" label="LanguageLocaleKey" name="LanguageLocaleKey" type="string"/>
+<Field __index="44" __sourcePath="{}/User/EmployeeNumber" containerType="SINGLE" label="EmployeeNumber" name="EmployeeNumber" type="string"/>
+<Field __index="45" __sourcePath="{}/User/DelegatedApproverId" containerType="SINGLE" label="DelegatedApproverId" name="DelegatedApproverId" type="string"/>
+<Field __index="46" __sourcePath="{}/User/ManagerId" containerType="SINGLE" label="ManagerId" name="ManagerId" type="string"/>
+<Field __dmType="Calendar" __index="47" __sourcePath="{}/User/LastLoginDate" containerType="SINGLE" label="LastLoginDate" name="LastLoginDate" type="string"/>
+<Field __dmType="Calendar" __index="48" __sourcePath="{}/User/LastPasswordChangeDate" containerType="SINGLE" label="LastPasswordChangeDate" name="LastPasswordChangeDate" type="string"/>
+<Field __dmType="Calendar" __index="49" __sourcePath="{}/User/CreatedDate" containerType="SINGLE" label="CreatedDate" name="CreatedDate" type="string"/>
+<Field __index="50" __sourcePath="{}/User/CreatedById" containerType="SINGLE" label="CreatedById" name="CreatedById" type="string"/>
+<Field __dmType="Calendar" __index="51" __sourcePath="{}/User/LastModifiedDate" containerType="SINGLE" label="LastModifiedDate" name="LastModifiedDate" type="string"/>
+<Field __index="52" __sourcePath="{}/User/LastModifiedById" containerType="SINGLE" label="LastModifiedById" name="LastModifiedById" type="string"/>
+<Field __dmType="Calendar" __index="53" __sourcePath="{}/User/SystemModstamp" containerType="SINGLE" label="SystemModstamp" name="SystemModstamp" type="string"/>
+<Field __dmType="Calendar" __index="54" __sourcePath="{}/User/OfflineTrialExpirationDate" containerType="SINGLE" label="OfflineTrialExpirationDate" name="OfflineTrialExpirationDate" type="string"/>
+<Field __dmType="Calendar" __index="55" __sourcePath="{}/User/OfflinePdaTrialExpirationDate" containerType="SINGLE" label="OfflinePdaTrialExpirationDate" name="OfflinePdaTrialExpirationDate" type="string"/>
+<Field __index="56" __sourcePath="{}/User/UserPermissionsMarketingUser" containerType="SINGLE" label="UserPermissionsMarketingUser" name="UserPermissionsMarketingUser" type="boolean"/>
+<Field __index="57" __sourcePath="{}/User/UserPermissionsOfflineUser" containerType="SINGLE" label="UserPermissionsOfflineUser" name="UserPermissionsOfflineUser" type="boolean"/>
+<Field __index="58" __sourcePath="{}/User/UserPermissionsCallCenterAutoLogin" containerType="SINGLE" label="UserPermissionsCallCenterAutoLogin" name="UserPermissionsCallCenterAutoLogin" type="boolean"/>
+<Field __index="59" __sourcePath="{}/User/UserPermissionsMobileUser" containerType="SINGLE" label="UserPermissionsMobileUser" name="UserPermissionsMobileUser" type="boolean"/>
+<Field __index="60" __sourcePath="{}/User/UserPermissionsSFContentUser" containerType="SINGLE" label="UserPermissionsSFContentUser" name="UserPermissionsSFContentUser" type="boolean"/>
+<Field __index="61" __sourcePath="{}/User/UserPermissionsKnowledgeUser" containerType="SINGLE" label="UserPermissionsKnowledgeUser" name="UserPermissionsKnowledgeUser" type="boolean"/>
+<Field __index="62" __sourcePath="{}/User/UserPermissionsInteractionUser" containerType="SINGLE" label="UserPermissionsInteractionUser" name="UserPermissionsInteractionUser" type="boolean"/>
+<Field __index="63" __sourcePath="{}/User/UserPermissionsSupportUser" containerType="SINGLE" label="UserPermissionsSupportUser" name="UserPermissionsSupportUser" type="boolean"/>
+<Field __index="64" __sourcePath="{}/User/UserPermissionsJigsawProspectingUser" containerType="SINGLE" label="UserPermissionsJigsawProspectingUser" name="UserPermissionsJigsawProspectingUser" type="boolean"/>
+<Field __index="65" __sourcePath="{}/User/UserPermissionsSiteforceContributorUser" containerType="SINGLE" label="UserPermissionsSiteforceContributorUser" name="UserPermissionsSiteforceContributorUser" type="boolean"/>
+<Field __index="66" __sourcePath="{}/User/UserPermissionsSiteforcePublisherUser" containerType="SINGLE" label="UserPermissionsSiteforcePublisherUser" name="UserPermissionsSiteforcePublisherUser" type="boolean"/>
+<Field __index="67" __sourcePath="{}/User/UserPermissionsChatterAnswersUser" containerType="SINGLE" label="UserPermissionsChatterAnswersUser" name="UserPermissionsChatterAnswersUser" type="boolean"/>
+<Field __index="68" __sourcePath="{}/User/UserPermissionsWorkDotComUserFeature" containerType="SINGLE" label="UserPermissionsWorkDotComUserFeature" name="UserPermissionsWorkDotComUserFeature" type="boolean"/>
+<Field __index="69" __sourcePath="{}/User/ForecastEnabled" containerType="SINGLE" label="ForecastEnabled" name="ForecastEnabled" type="boolean"/>
+<Field __index="70" __sourcePath="{}/User/UserPreferencesActivityRemindersPopup" containerType="SINGLE" label="UserPreferencesActivityRemindersPopup" name="UserPreferencesActivityRemindersPopup" type="boolean"/>
+<Field __index="71" __sourcePath="{}/User/UserPreferencesEventRemindersCheckboxDefault" containerType="SINGLE" label="UserPreferencesEventRemindersCheckboxDefault" name="UserPreferencesEventRemindersCheckboxDefault" type="boolean"/>
+<Field __index="72" __sourcePath="{}/User/UserPreferencesTaskRemindersCheckboxDefault" containerType="SINGLE" label="UserPreferencesTaskRemindersCheckboxDefault" name="UserPreferencesTaskRemindersCheckboxDefault" type="boolean"/>
+<Field __index="73" __sourcePath="{}/User/UserPreferencesReminderSoundOff" containerType="SINGLE" label="UserPreferencesReminderSoundOff" name="UserPreferencesReminderSoundOff" type="boolean"/>
+<Field __index="74" __sourcePath="{}/User/UserPreferencesDisableAllFeedsEmail" containerType="SINGLE" label="UserPreferencesDisableAllFeedsEmail" name="UserPreferencesDisableAllFeedsEmail" type="boolean"/>
+<Field __index="75" __sourcePath="{}/User/UserPreferencesDisableFollowersEmail" containerType="SINGLE" label="UserPreferencesDisableFollowersEmail" name="UserPreferencesDisableFollowersEmail" type="boolean"/>
+<Field __index="76" __sourcePath="{}/User/UserPreferencesDisableProfilePostEmail" containerType="SINGLE" label="UserPreferencesDisableProfilePostEmail" name="UserPreferencesDisableProfilePostEmail" type="boolean"/>
+<Field __index="77" __sourcePath="{}/User/UserPreferencesDisableChangeCommentEmail" containerType="SINGLE" label="UserPreferencesDisableChangeCommentEmail" name="UserPreferencesDisableChangeCommentEmail" type="boolean"/>
+<Field __index="78" __sourcePath="{}/User/UserPreferencesDisableLaterCommentEmail" containerType="SINGLE" label="UserPreferencesDisableLaterCommentEmail" name="UserPreferencesDisableLaterCommentEmail" type="boolean"/>
+<Field __index="79" __sourcePath="{}/User/UserPreferencesDisProfPostCommentEmail" containerType="SINGLE" label="UserPreferencesDisProfPostCommentEmail" name="UserPreferencesDisProfPostCommentEmail" type="boolean"/>
+<Field __index="80" __sourcePath="{}/User/UserPreferencesContentNoEmail" containerType="SINGLE" label="UserPreferencesContentNoEmail" name="UserPreferencesContentNoEmail" type="boolean"/>
+<Field __index="81" __sourcePath="{}/User/UserPreferencesContentEmailAsAndWhen" containerType="SINGLE" label="UserPreferencesContentEmailAsAndWhen" name="UserPreferencesContentEmailAsAndWhen" type="boolean"/>
+<Field __index="82" __sourcePath="{}/User/UserPreferencesApexPagesDeveloperMode" containerType="SINGLE" label="UserPreferencesApexPagesDeveloperMode" name="UserPreferencesApexPagesDeveloperMode" type="boolean"/>
+<Field __index="83" __sourcePath="{}/User/UserPreferencesHideCSNGetChatterMobileTask" containerType="SINGLE" label="UserPreferencesHideCSNGetChatterMobileTask" name="UserPreferencesHideCSNGetChatterMobileTask" type="boolean"/>
+<Field __index="84" __sourcePath="{}/User/UserPreferencesDisableMentionsPostEmail" containerType="SINGLE" label="UserPreferencesDisableMentionsPostEmail" name="UserPreferencesDisableMentionsPostEmail" type="boolean"/>
+<Field __index="85" __sourcePath="{}/User/UserPreferencesDisMentionsCommentEmail" containerType="SINGLE" label="UserPreferencesDisMentionsCommentEmail" name="UserPreferencesDisMentionsCommentEmail" type="boolean"/>
+<Field __index="86" __sourcePath="{}/User/UserPreferencesHideCSNDesktopTask" containerType="SINGLE" label="UserPreferencesHideCSNDesktopTask" name="UserPreferencesHideCSNDesktopTask" type="boolean"/>
+<Field __index="87" __sourcePath="{}/User/UserPreferencesHideChatterOnboardingSplash" containerType="SINGLE" label="UserPreferencesHideChatterOnboardingSplash" name="UserPreferencesHideChatterOnboardingSplash" type="boolean"/>
+<Field __index="88" __sourcePath="{}/User/UserPreferencesHideSecondChatterOnboardingSplash" containerType="SINGLE" label="UserPreferencesHideSecondChatterOnboardingSplash" name="UserPreferencesHideSecondChatterOnboardingSplash" type="boolean"/>
+<Field __index="89" __sourcePath="{}/User/UserPreferencesDisCommentAfterLikeEmail" containerType="SINGLE" label="UserPreferencesDisCommentAfterLikeEmail" name="UserPreferencesDisCommentAfterLikeEmail" type="boolean"/>
+<Field __index="90" __sourcePath="{}/User/UserPreferencesDisableLikeEmail" containerType="SINGLE" label="UserPreferencesDisableLikeEmail" name="UserPreferencesDisableLikeEmail" type="boolean"/>
+<Field __index="91" __sourcePath="{}/User/UserPreferencesDisableMessageEmail" containerType="SINGLE" label="UserPreferencesDisableMessageEmail" name="UserPreferencesDisableMessageEmail" type="boolean"/>
+<Field __index="92" __sourcePath="{}/User/UserPreferencesJigsawListUser" containerType="SINGLE" label="UserPreferencesJigsawListUser" name="UserPreferencesJigsawListUser" type="boolean"/>
+<Field __index="93" __sourcePath="{}/User/UserPreferencesDisableBookmarkEmail" containerType="SINGLE" label="UserPreferencesDisableBookmarkEmail" name="UserPreferencesDisableBookmarkEmail" type="boolean"/>
+<Field __index="94" __sourcePath="{}/User/UserPreferencesDisableSharePostEmail" containerType="SINGLE" label="UserPreferencesDisableSharePostEmail" name="UserPreferencesDisableSharePostEmail" type="boolean"/>
+<Field __index="95" __sourcePath="{}/User/UserPreferencesEnableAutoSubForFeeds" containerType="SINGLE" label="UserPreferencesEnableAutoSubForFeeds" name="UserPreferencesEnableAutoSubForFeeds" type="boolean"/>
+<Field __index="96" __sourcePath="{}/User/UserPreferencesDisableFileShareNotificationsForApi" containerType="SINGLE" label="UserPreferencesDisableFileShareNotificationsForApi" name="UserPreferencesDisableFileShareNotificationsForApi" type="boolean"/>
+<Field __index="97" __sourcePath="{}/User/UserPreferencesShowTitleToExternalUsers" containerType="SINGLE" label="UserPreferencesShowTitleToExternalUsers" name="UserPreferencesShowTitleToExternalUsers" type="boolean"/>
+<Field __index="98" __sourcePath="{}/User/UserPreferencesShowManagerToExternalUsers" containerType="SINGLE" label="UserPreferencesShowManagerToExternalUsers" name="UserPreferencesShowManagerToExternalUsers" type="boolean"/>
+<Field __index="99" __sourcePath="{}/User/UserPreferencesShowEmailToExternalUsers" containerType="SINGLE" label="UserPreferencesShowEmailToExternalUsers" name="UserPreferencesShowEmailToExternalUsers" type="boolean"/>
+<Field __index="100" __sourcePath="{}/User/UserPreferencesShowWorkPhoneToExternalUsers" containerType="SINGLE" label="UserPreferencesShowWorkPhoneToExternalUsers" name="UserPreferencesShowWorkPhoneToExternalUsers" type="boolean"/>
+<Field __index="101" __sourcePath="{}/User/UserPreferencesShowMobilePhoneToExternalUsers" containerType="SINGLE" label="UserPreferencesShowMobilePhoneToExternalUsers" name="UserPreferencesShowMobilePhoneToExternalUsers" type="boolean"/>
+<Field __index="102" __sourcePath="{}/User/UserPreferencesShowFaxToExternalUsers" containerType="SINGLE" label="UserPreferencesShowFaxToExternalUsers" name="UserPreferencesShowFaxToExternalUsers" type="boolean"/>
+<Field __index="103" __sourcePath="{}/User/UserPreferencesShowStreetAddressToExternalUsers" containerType="SINGLE" label="UserPreferencesShowStreetAddressToExternalUsers" name="UserPreferencesShowStreetAddressToExternalUsers" type="boolean"/>
+<Field __index="104" __sourcePath="{}/User/UserPreferencesShowCityToExternalUsers" containerType="SINGLE" label="UserPreferencesShowCityToExternalUsers" name="UserPreferencesShowCityToExternalUsers" type="boolean"/>
+<Field __index="105" __sourcePath="{}/User/UserPreferencesShowStateToExternalUsers" containerType="SINGLE" label="UserPreferencesShowStateToExternalUsers" name="UserPreferencesShowStateToExternalUsers" type="boolean"/>
+<Field __index="106" __sourcePath="{}/User/UserPreferencesShowPostalCodeToExternalUsers" containerType="SINGLE" label="UserPreferencesShowPostalCodeToExternalUsers" name="UserPreferencesShowPostalCodeToExternalUsers" type="boolean"/>
+<Field __index="107" __sourcePath="{}/User/UserPreferencesShowCountryToExternalUsers" containerType="SINGLE" label="UserPreferencesShowCountryToExternalUsers" name="UserPreferencesShowCountryToExternalUsers" type="boolean"/>
+<Field __index="108" __sourcePath="{}/User/UserPreferencesShowProfilePicToGuestUsers" containerType="SINGLE" label="UserPreferencesShowProfilePicToGuestUsers" name="UserPreferencesShowProfilePicToGuestUsers" type="boolean"/>
+<Field __index="109" __sourcePath="{}/User/UserPreferencesShowTitleToGuestUsers" containerType="SINGLE" label="UserPreferencesShowTitleToGuestUsers" name="UserPreferencesShowTitleToGuestUsers" type="boolean"/>
+<Field __index="110" __sourcePath="{}/User/UserPreferencesShowCityToGuestUsers" containerType="SINGLE" label="UserPreferencesShowCityToGuestUsers" name="UserPreferencesShowCityToGuestUsers" type="boolean"/>
+<Field __index="111" __sourcePath="{}/User/UserPreferencesShowStateToGuestUsers" containerType="SINGLE" label="UserPreferencesShowStateToGuestUsers" name="UserPreferencesShowStateToGuestUsers" type="boolean"/>
+<Field __index="112" __sourcePath="{}/User/UserPreferencesShowPostalCodeToGuestUsers" containerType="SINGLE" label="UserPreferencesShowPostalCodeToGuestUsers" name="UserPreferencesShowPostalCodeToGuestUsers" type="boolean"/>
+<Field __index="113" __sourcePath="{}/User/UserPreferencesShowCountryToGuestUsers" containerType="SINGLE" label="UserPreferencesShowCountryToGuestUsers" name="UserPreferencesShowCountryToGuestUsers" type="boolean"/>
+<Field __index="114" __sourcePath="{}/User/UserPreferencesDisableFeedbackEmail" containerType="SINGLE" label="UserPreferencesDisableFeedbackEmail" name="UserPreferencesDisableFeedbackEmail" type="boolean"/>
+<Field __index="115" __sourcePath="{}/User/UserPreferencesDisableWorkEmail" containerType="SINGLE" label="UserPreferencesDisableWorkEmail" name="UserPreferencesDisableWorkEmail" type="boolean"/>
+<Field __index="116" __sourcePath="{}/User/UserPreferencesHideS1BrowserUI" containerType="SINGLE" label="UserPreferencesHideS1BrowserUI" name="UserPreferencesHideS1BrowserUI" type="boolean"/>
+<Field __index="117" __sourcePath="{}/User/UserPreferencesDisableEndorsementEmail" containerType="SINGLE" label="UserPreferencesDisableEndorsementEmail" name="UserPreferencesDisableEndorsementEmail" type="boolean"/>
+<Field __index="118" __sourcePath="{}/User/ContactId" containerType="SINGLE" label="ContactId" name="ContactId" type="string"/>
+<Field __index="119" __sourcePath="{}/User/AccountId" containerType="SINGLE" label="AccountId" name="AccountId" type="string"/>
+<Field __index="120" __sourcePath="{}/User/CallCenterId" containerType="SINGLE" label="CallCenterId" name="CallCenterId" type="string"/>
+<Field __index="121" __sourcePath="{}/User/Extension" containerType="SINGLE" label="Extension" name="Extension" type="string"/>
+<Field __index="122" __sourcePath="{}/User/FederationIdentifier" containerType="SINGLE" label="FederationIdentifier" name="FederationIdentifier" type="string"/>
+<Field __index="123" __sourcePath="{}/User/AboutMe" containerType="SINGLE" label="AboutMe" name="AboutMe" type="string"/>
+<Field __index="124" __sourcePath="{}/User/FullPhotoUrl" containerType="SINGLE" label="FullPhotoUrl" name="FullPhotoUrl" type="string"/>
+<Field __index="125" __sourcePath="{}/User/SmallPhotoUrl" containerType="SINGLE" label="SmallPhotoUrl" name="SmallPhotoUrl" type="string"/>
+<Field __index="126" __sourcePath="{}/User/DigestFrequency" containerType="SINGLE" label="DigestFrequency" name="DigestFrequency" type="string"/>
+<Field __index="127" __sourcePath="{}/User/DefaultGroupNotificationFrequency" containerType="SINGLE" label="DefaultGroupNotificationFrequency" name="DefaultGroupNotificationFrequency" type="string"/>
+<Field __index="128" __sourcePath="{}/User/JigsawImportLimitOverride" containerType="SINGLE" label="JigsawImportLimitOverride" name="JigsawImportLimitOverride" type="integer"/>
+<Field __dmType="Calendar" __index="129" __sourcePath="{}/User/LastViewedDate" containerType="SINGLE" label="LastViewedDate" name="LastViewedDate" type="string"/>
+<Field __dmType="Calendar" __index="130" __sourcePath="{}/User/LastReferencedDate" containerType="SINGLE" label="LastReferencedDate" name="LastReferencedDate" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/User" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Output" id="86a70f1e-97a2-4895-8d7f-b4d524be9b7f">
+<Record fieldDelimiter="," name="User" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="0" __sourcePath="{}/User/Id" containerType="SINGLE" label="Id" name="Id" type="string"/>
+<Field __implementationClass="java.lang.String" __index="1" __sourcePath="{}/User/Username" containerType="SINGLE" label="Username" name="Username" type="string"/>
+<Field __implementationClass="java.lang.String" __index="2" __sourcePath="{}/User/LastName" containerType="SINGLE" label="LastName" name="LastName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="3" __sourcePath="{}/User/FirstName" containerType="SINGLE" label="FirstName" name="FirstName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="4" __sourcePath="{}/User/Name" containerType="SINGLE" label="Name" name="Name" type="string"/>
+<Field __implementationClass="java.lang.String" __index="5" __sourcePath="{}/User/CompanyName" containerType="SINGLE" label="CompanyName" name="CompanyName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="6" __sourcePath="{}/User/Division" containerType="SINGLE" label="Division" name="Division" type="string"/>
+<Field __implementationClass="java.lang.String" __index="7" __sourcePath="{}/User/Department" containerType="SINGLE" label="Department" name="Department" type="string"/>
+<Field __implementationClass="java.lang.String" __index="8" __sourcePath="{}/User/Title" containerType="SINGLE" label="Title" name="Title" type="string"/>
+<Field __implementationClass="java.lang.String" __index="9" __sourcePath="{}/User/Street" containerType="SINGLE" label="Street" name="Street" type="string"/>
+<Field __implementationClass="java.lang.String" __index="10" __sourcePath="{}/User/City" containerType="SINGLE" label="City" name="City" type="string"/>
+<Field __implementationClass="java.lang.String" __index="11" __sourcePath="{}/User/State" containerType="SINGLE" label="State" name="State" type="string"/>
+<Field __implementationClass="java.lang.String" __index="12" __sourcePath="{}/User/PostalCode" containerType="SINGLE" label="PostalCode" name="PostalCode" type="string"/>
+<Field __implementationClass="java.lang.String" __index="13" __sourcePath="{}/User/Country" containerType="SINGLE" label="Country" name="Country" type="string"/>
+<Field __implementationClass="java.lang.Double" __index="14" __sourcePath="{}/User/Latitude" containerType="SINGLE" label="Latitude" name="Latitude" type="number"/>
+<Field __implementationClass="java.lang.Double" __index="15" __sourcePath="{}/User/Longitude" containerType="SINGLE" label="Longitude" name="Longitude" type="number"/>
+<Field __implementationClass="java.lang.String" __index="16" __sourcePath="{}/User/Address" containerType="SINGLE" label="Address" name="Address" type="string"/>
+<Field __implementationClass="java.lang.String" __index="17" __sourcePath="{}/User/Email" containerType="SINGLE" label="Email" name="Email" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="18" __sourcePath="{}/User/EmailPreferencesAutoBcc" containerType="SINGLE" label="EmailPreferencesAutoBcc" name="EmailPreferencesAutoBcc" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="19" __sourcePath="{}/User/EmailPreferencesAutoBccStayInTouch" containerType="SINGLE" label="EmailPreferencesAutoBccStayInTouch" name="EmailPreferencesAutoBccStayInTouch" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="20" __sourcePath="{}/User/EmailPreferencesStayInTouchReminder" containerType="SINGLE" label="EmailPreferencesStayInTouchReminder" name="EmailPreferencesStayInTouchReminder" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="21" __sourcePath="{}/User/SenderEmail" containerType="SINGLE" label="SenderEmail" name="SenderEmail" type="string"/>
+<Field __implementationClass="java.lang.String" __index="22" __sourcePath="{}/User/SenderName" containerType="SINGLE" label="SenderName" name="SenderName" type="string"/>
+<Field __implementationClass="java.lang.String" __index="23" __sourcePath="{}/User/Signature" containerType="SINGLE" label="Signature" name="Signature" type="string"/>
+<Field __implementationClass="java.lang.String" __index="24" __sourcePath="{}/User/StayInTouchSubject" containerType="SINGLE" label="StayInTouchSubject" name="StayInTouchSubject" type="string"/>
+<Field __implementationClass="java.lang.String" __index="25" __sourcePath="{}/User/StayInTouchSignature" containerType="SINGLE" label="StayInTouchSignature" name="StayInTouchSignature" type="string"/>
+<Field __implementationClass="java.lang.String" __index="26" __sourcePath="{}/User/StayInTouchNote" containerType="SINGLE" label="StayInTouchNote" name="StayInTouchNote" type="string"/>
+<Field __implementationClass="java.lang.String" __index="27" __sourcePath="{}/User/Phone" containerType="SINGLE" label="Phone" name="Phone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="28" __sourcePath="{}/User/Fax" containerType="SINGLE" label="Fax" name="Fax" type="string"/>
+<Field __implementationClass="java.lang.String" __index="29" __sourcePath="{}/User/MobilePhone" containerType="SINGLE" label="MobilePhone" name="MobilePhone" type="string"/>
+<Field __implementationClass="java.lang.String" __index="30" __sourcePath="{}/User/Alias" containerType="SINGLE" label="Alias" name="Alias" type="string"/>
+<Field __implementationClass="java.lang.String" __index="31" __sourcePath="{}/User/CommunityNickname" containerType="SINGLE" label="CommunityNickname" name="CommunityNickname" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="32" __sourcePath="{}/User/IsBadged" containerType="SINGLE" label="IsBadged" name="IsBadged" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="33" __sourcePath="{}/User/BadgeText" containerType="SINGLE" label="BadgeText" name="BadgeText" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="34" __sourcePath="{}/User/IsActive" containerType="SINGLE" label="IsActive" name="IsActive" type="boolean"/>
+<Field __index="35" __sourcePath="{}/User/TimeZoneSidKey" containerType="SINGLE" label="TimeZoneSidKey" name="TimeZoneSidKey" type="string"/>
+<Field __implementationClass="java.lang.String" __index="36" __sourcePath="{}/User/UserRoleId" containerType="SINGLE" label="UserRoleId" name="UserRoleId" type="string"/>
+<Field __index="37" __sourcePath="{}/User/LocaleSidKey" containerType="SINGLE" label="LocaleSidKey" name="LocaleSidKey" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="38" __sourcePath="{}/User/ReceivesInfoEmails" containerType="SINGLE" label="ReceivesInfoEmails" name="ReceivesInfoEmails" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="39" __sourcePath="{}/User/ReceivesAdminInfoEmails" containerType="SINGLE" label="ReceivesAdminInfoEmails" name="ReceivesAdminInfoEmails" type="boolean"/>
+<Field __index="40" __sourcePath="{}/User/EmailEncodingKey" containerType="SINGLE" label="EmailEncodingKey" name="EmailEncodingKey" type="string"/>
+<Field __implementationClass="java.lang.String" __index="41" __sourcePath="{}/User/ProfileId" containerType="SINGLE" label="ProfileId" name="ProfileId" type="string"/>
+<Field __index="42" __sourcePath="{}/User/UserType" containerType="SINGLE" label="UserType" name="UserType" type="string"/>
+<Field __index="43" __sourcePath="{}/User/LanguageLocaleKey" containerType="SINGLE" label="LanguageLocaleKey" name="LanguageLocaleKey" type="string"/>
+<Field __implementationClass="java.lang.String" __index="44" __sourcePath="{}/User/EmployeeNumber" containerType="SINGLE" label="EmployeeNumber" name="EmployeeNumber" type="string"/>
+<Field __implementationClass="java.lang.String" __index="45" __sourcePath="{}/User/DelegatedApproverId" containerType="SINGLE" label="DelegatedApproverId" name="DelegatedApproverId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="46" __sourcePath="{}/User/ManagerId" containerType="SINGLE" label="ManagerId" name="ManagerId" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="47" __sourcePath="{}/User/LastLoginDate" containerType="SINGLE" label="LastLoginDate" name="LastLoginDate" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="48" __sourcePath="{}/User/LastPasswordChangeDate" containerType="SINGLE" label="LastPasswordChangeDate" name="LastPasswordChangeDate" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="49" __sourcePath="{}/User/CreatedDate" containerType="SINGLE" label="CreatedDate" name="CreatedDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="50" __sourcePath="{}/User/CreatedById" containerType="SINGLE" label="CreatedById" name="CreatedById" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="51" __sourcePath="{}/User/LastModifiedDate" containerType="SINGLE" label="LastModifiedDate" name="LastModifiedDate" type="string"/>
+<Field __implementationClass="java.lang.String" __index="52" __sourcePath="{}/User/LastModifiedById" containerType="SINGLE" label="LastModifiedById" name="LastModifiedById" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="53" __sourcePath="{}/User/SystemModstamp" containerType="SINGLE" label="SystemModstamp" name="SystemModstamp" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="54" __sourcePath="{}/User/OfflineTrialExpirationDate" containerType="SINGLE" label="OfflineTrialExpirationDate" name="OfflineTrialExpirationDate" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="55" __sourcePath="{}/User/OfflinePdaTrialExpirationDate" containerType="SINGLE" label="OfflinePdaTrialExpirationDate" name="OfflinePdaTrialExpirationDate" type="string"/>
+<Field __implementationClass="java.lang.Boolean" __index="56" __sourcePath="{}/User/UserPermissionsMarketingUser" containerType="SINGLE" label="UserPermissionsMarketingUser" name="UserPermissionsMarketingUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="57" __sourcePath="{}/User/UserPermissionsOfflineUser" containerType="SINGLE" label="UserPermissionsOfflineUser" name="UserPermissionsOfflineUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="58" __sourcePath="{}/User/UserPermissionsCallCenterAutoLogin" containerType="SINGLE" label="UserPermissionsCallCenterAutoLogin" name="UserPermissionsCallCenterAutoLogin" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="59" __sourcePath="{}/User/UserPermissionsMobileUser" containerType="SINGLE" label="UserPermissionsMobileUser" name="UserPermissionsMobileUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="60" __sourcePath="{}/User/UserPermissionsSFContentUser" containerType="SINGLE" label="UserPermissionsSFContentUser" name="UserPermissionsSFContentUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="61" __sourcePath="{}/User/UserPermissionsKnowledgeUser" containerType="SINGLE" label="UserPermissionsKnowledgeUser" name="UserPermissionsKnowledgeUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="62" __sourcePath="{}/User/UserPermissionsInteractionUser" containerType="SINGLE" label="UserPermissionsInteractionUser" name="UserPermissionsInteractionUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="63" __sourcePath="{}/User/UserPermissionsSupportUser" containerType="SINGLE" label="UserPermissionsSupportUser" name="UserPermissionsSupportUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="64" __sourcePath="{}/User/UserPermissionsJigsawProspectingUser" containerType="SINGLE" label="UserPermissionsJigsawProspectingUser" name="UserPermissionsJigsawProspectingUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="65" __sourcePath="{}/User/UserPermissionsSiteforceContributorUser" containerType="SINGLE" label="UserPermissionsSiteforceContributorUser" name="UserPermissionsSiteforceContributorUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="66" __sourcePath="{}/User/UserPermissionsSiteforcePublisherUser" containerType="SINGLE" label="UserPermissionsSiteforcePublisherUser" name="UserPermissionsSiteforcePublisherUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="67" __sourcePath="{}/User/UserPermissionsChatterAnswersUser" containerType="SINGLE" label="UserPermissionsChatterAnswersUser" name="UserPermissionsChatterAnswersUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="68" __sourcePath="{}/User/UserPermissionsWorkDotComUserFeature" containerType="SINGLE" label="UserPermissionsWorkDotComUserFeature" name="UserPermissionsWorkDotComUserFeature" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="69" __sourcePath="{}/User/ForecastEnabled" containerType="SINGLE" label="ForecastEnabled" name="ForecastEnabled" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="70" __sourcePath="{}/User/UserPreferencesActivityRemindersPopup" containerType="SINGLE" label="UserPreferencesActivityRemindersPopup" name="UserPreferencesActivityRemindersPopup" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="71" __sourcePath="{}/User/UserPreferencesEventRemindersCheckboxDefault" containerType="SINGLE" label="UserPreferencesEventRemindersCheckboxDefault" name="UserPreferencesEventRemindersCheckboxDefault" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="72" __sourcePath="{}/User/UserPreferencesTaskRemindersCheckboxDefault" containerType="SINGLE" label="UserPreferencesTaskRemindersCheckboxDefault" name="UserPreferencesTaskRemindersCheckboxDefault" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="73" __sourcePath="{}/User/UserPreferencesReminderSoundOff" containerType="SINGLE" label="UserPreferencesReminderSoundOff" name="UserPreferencesReminderSoundOff" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="74" __sourcePath="{}/User/UserPreferencesDisableAllFeedsEmail" containerType="SINGLE" label="UserPreferencesDisableAllFeedsEmail" name="UserPreferencesDisableAllFeedsEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="75" __sourcePath="{}/User/UserPreferencesDisableFollowersEmail" containerType="SINGLE" label="UserPreferencesDisableFollowersEmail" name="UserPreferencesDisableFollowersEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="76" __sourcePath="{}/User/UserPreferencesDisableProfilePostEmail" containerType="SINGLE" label="UserPreferencesDisableProfilePostEmail" name="UserPreferencesDisableProfilePostEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="77" __sourcePath="{}/User/UserPreferencesDisableChangeCommentEmail" containerType="SINGLE" label="UserPreferencesDisableChangeCommentEmail" name="UserPreferencesDisableChangeCommentEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="78" __sourcePath="{}/User/UserPreferencesDisableLaterCommentEmail" containerType="SINGLE" label="UserPreferencesDisableLaterCommentEmail" name="UserPreferencesDisableLaterCommentEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="79" __sourcePath="{}/User/UserPreferencesDisProfPostCommentEmail" containerType="SINGLE" label="UserPreferencesDisProfPostCommentEmail" name="UserPreferencesDisProfPostCommentEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="80" __sourcePath="{}/User/UserPreferencesContentNoEmail" containerType="SINGLE" label="UserPreferencesContentNoEmail" name="UserPreferencesContentNoEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="81" __sourcePath="{}/User/UserPreferencesContentEmailAsAndWhen" containerType="SINGLE" label="UserPreferencesContentEmailAsAndWhen" name="UserPreferencesContentEmailAsAndWhen" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="82" __sourcePath="{}/User/UserPreferencesApexPagesDeveloperMode" containerType="SINGLE" label="UserPreferencesApexPagesDeveloperMode" name="UserPreferencesApexPagesDeveloperMode" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="83" __sourcePath="{}/User/UserPreferencesHideCSNGetChatterMobileTask" containerType="SINGLE" label="UserPreferencesHideCSNGetChatterMobileTask" name="UserPreferencesHideCSNGetChatterMobileTask" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="84" __sourcePath="{}/User/UserPreferencesDisableMentionsPostEmail" containerType="SINGLE" label="UserPreferencesDisableMentionsPostEmail" name="UserPreferencesDisableMentionsPostEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="85" __sourcePath="{}/User/UserPreferencesDisMentionsCommentEmail" containerType="SINGLE" label="UserPreferencesDisMentionsCommentEmail" name="UserPreferencesDisMentionsCommentEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="86" __sourcePath="{}/User/UserPreferencesHideCSNDesktopTask" containerType="SINGLE" label="UserPreferencesHideCSNDesktopTask" name="UserPreferencesHideCSNDesktopTask" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="87" __sourcePath="{}/User/UserPreferencesHideChatterOnboardingSplash" containerType="SINGLE" label="UserPreferencesHideChatterOnboardingSplash" name="UserPreferencesHideChatterOnboardingSplash" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="88" __sourcePath="{}/User/UserPreferencesHideSecondChatterOnboardingSplash" containerType="SINGLE" label="UserPreferencesHideSecondChatterOnboardingSplash" name="UserPreferencesHideSecondChatterOnboardingSplash" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="89" __sourcePath="{}/User/UserPreferencesDisCommentAfterLikeEmail" containerType="SINGLE" label="UserPreferencesDisCommentAfterLikeEmail" name="UserPreferencesDisCommentAfterLikeEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="90" __sourcePath="{}/User/UserPreferencesDisableLikeEmail" containerType="SINGLE" label="UserPreferencesDisableLikeEmail" name="UserPreferencesDisableLikeEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="91" __sourcePath="{}/User/UserPreferencesDisableMessageEmail" containerType="SINGLE" label="UserPreferencesDisableMessageEmail" name="UserPreferencesDisableMessageEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="92" __sourcePath="{}/User/UserPreferencesJigsawListUser" containerType="SINGLE" label="UserPreferencesJigsawListUser" name="UserPreferencesJigsawListUser" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="93" __sourcePath="{}/User/UserPreferencesDisableBookmarkEmail" containerType="SINGLE" label="UserPreferencesDisableBookmarkEmail" name="UserPreferencesDisableBookmarkEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="94" __sourcePath="{}/User/UserPreferencesDisableSharePostEmail" containerType="SINGLE" label="UserPreferencesDisableSharePostEmail" name="UserPreferencesDisableSharePostEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="95" __sourcePath="{}/User/UserPreferencesEnableAutoSubForFeeds" containerType="SINGLE" label="UserPreferencesEnableAutoSubForFeeds" name="UserPreferencesEnableAutoSubForFeeds" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="96" __sourcePath="{}/User/UserPreferencesDisableFileShareNotificationsForApi" containerType="SINGLE" label="UserPreferencesDisableFileShareNotificationsForApi" name="UserPreferencesDisableFileShareNotificationsForApi" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="97" __sourcePath="{}/User/UserPreferencesShowTitleToExternalUsers" containerType="SINGLE" label="UserPreferencesShowTitleToExternalUsers" name="UserPreferencesShowTitleToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="98" __sourcePath="{}/User/UserPreferencesShowManagerToExternalUsers" containerType="SINGLE" label="UserPreferencesShowManagerToExternalUsers" name="UserPreferencesShowManagerToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="99" __sourcePath="{}/User/UserPreferencesShowEmailToExternalUsers" containerType="SINGLE" label="UserPreferencesShowEmailToExternalUsers" name="UserPreferencesShowEmailToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="100" __sourcePath="{}/User/UserPreferencesShowWorkPhoneToExternalUsers" containerType="SINGLE" label="UserPreferencesShowWorkPhoneToExternalUsers" name="UserPreferencesShowWorkPhoneToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="101" __sourcePath="{}/User/UserPreferencesShowMobilePhoneToExternalUsers" containerType="SINGLE" label="UserPreferencesShowMobilePhoneToExternalUsers" name="UserPreferencesShowMobilePhoneToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="102" __sourcePath="{}/User/UserPreferencesShowFaxToExternalUsers" containerType="SINGLE" label="UserPreferencesShowFaxToExternalUsers" name="UserPreferencesShowFaxToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="103" __sourcePath="{}/User/UserPreferencesShowStreetAddressToExternalUsers" containerType="SINGLE" label="UserPreferencesShowStreetAddressToExternalUsers" name="UserPreferencesShowStreetAddressToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="104" __sourcePath="{}/User/UserPreferencesShowCityToExternalUsers" containerType="SINGLE" label="UserPreferencesShowCityToExternalUsers" name="UserPreferencesShowCityToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="105" __sourcePath="{}/User/UserPreferencesShowStateToExternalUsers" containerType="SINGLE" label="UserPreferencesShowStateToExternalUsers" name="UserPreferencesShowStateToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="106" __sourcePath="{}/User/UserPreferencesShowPostalCodeToExternalUsers" containerType="SINGLE" label="UserPreferencesShowPostalCodeToExternalUsers" name="UserPreferencesShowPostalCodeToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="107" __sourcePath="{}/User/UserPreferencesShowCountryToExternalUsers" containerType="SINGLE" label="UserPreferencesShowCountryToExternalUsers" name="UserPreferencesShowCountryToExternalUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="108" __sourcePath="{}/User/UserPreferencesShowProfilePicToGuestUsers" containerType="SINGLE" label="UserPreferencesShowProfilePicToGuestUsers" name="UserPreferencesShowProfilePicToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="109" __sourcePath="{}/User/UserPreferencesShowTitleToGuestUsers" containerType="SINGLE" label="UserPreferencesShowTitleToGuestUsers" name="UserPreferencesShowTitleToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="110" __sourcePath="{}/User/UserPreferencesShowCityToGuestUsers" containerType="SINGLE" label="UserPreferencesShowCityToGuestUsers" name="UserPreferencesShowCityToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="111" __sourcePath="{}/User/UserPreferencesShowStateToGuestUsers" containerType="SINGLE" label="UserPreferencesShowStateToGuestUsers" name="UserPreferencesShowStateToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="112" __sourcePath="{}/User/UserPreferencesShowPostalCodeToGuestUsers" containerType="SINGLE" label="UserPreferencesShowPostalCodeToGuestUsers" name="UserPreferencesShowPostalCodeToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="113" __sourcePath="{}/User/UserPreferencesShowCountryToGuestUsers" containerType="SINGLE" label="UserPreferencesShowCountryToGuestUsers" name="UserPreferencesShowCountryToGuestUsers" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="114" __sourcePath="{}/User/UserPreferencesDisableFeedbackEmail" containerType="SINGLE" label="UserPreferencesDisableFeedbackEmail" name="UserPreferencesDisableFeedbackEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="115" __sourcePath="{}/User/UserPreferencesDisableWorkEmail" containerType="SINGLE" label="UserPreferencesDisableWorkEmail" name="UserPreferencesDisableWorkEmail" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="116" __sourcePath="{}/User/UserPreferencesHideS1BrowserUI" containerType="SINGLE" label="UserPreferencesHideS1BrowserUI" name="UserPreferencesHideS1BrowserUI" type="boolean"/>
+<Field __implementationClass="java.lang.Boolean" __index="117" __sourcePath="{}/User/UserPreferencesDisableEndorsementEmail" containerType="SINGLE" label="UserPreferencesDisableEndorsementEmail" name="UserPreferencesDisableEndorsementEmail" type="boolean"/>
+<Field __implementationClass="java.lang.String" __index="118" __sourcePath="{}/User/ContactId" containerType="SINGLE" label="ContactId" name="ContactId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="119" __sourcePath="{}/User/AccountId" containerType="SINGLE" label="AccountId" name="AccountId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="120" __sourcePath="{}/User/CallCenterId" containerType="SINGLE" label="CallCenterId" name="CallCenterId" type="string"/>
+<Field __implementationClass="java.lang.String" __index="121" __sourcePath="{}/User/Extension" containerType="SINGLE" label="Extension" name="Extension" type="string"/>
+<Field __implementationClass="java.lang.String" __index="122" __sourcePath="{}/User/FederationIdentifier" containerType="SINGLE" label="FederationIdentifier" name="FederationIdentifier" type="string"/>
+<Field __implementationClass="java.lang.String" __index="123" __sourcePath="{}/User/AboutMe" containerType="SINGLE" label="AboutMe" name="AboutMe" type="string"/>
+<Field __implementationClass="java.lang.String" __index="124" __sourcePath="{}/User/FullPhotoUrl" containerType="SINGLE" label="FullPhotoUrl" name="FullPhotoUrl" type="string"/>
+<Field __implementationClass="java.lang.String" __index="125" __sourcePath="{}/User/SmallPhotoUrl" containerType="SINGLE" label="SmallPhotoUrl" name="SmallPhotoUrl" type="string"/>
+<Field __index="126" __sourcePath="{}/User/DigestFrequency" containerType="SINGLE" label="DigestFrequency" name="DigestFrequency" type="string"/>
+<Field __index="127" __sourcePath="{}/User/DefaultGroupNotificationFrequency" containerType="SINGLE" label="DefaultGroupNotificationFrequency" name="DefaultGroupNotificationFrequency" type="string"/>
+<Field __implementationClass="java.lang.Integer" __index="128" __sourcePath="{}/User/JigsawImportLimitOverride" containerType="SINGLE" label="JigsawImportLimitOverride" name="JigsawImportLimitOverride" type="integer"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="129" __sourcePath="{}/User/LastViewedDate" containerType="SINGLE" label="LastViewedDate" name="LastViewedDate" type="string"/>
+<Field __dmType="Calendar" __implementationClass="java.util.Calendar" __index="130" __sourcePath="{}/User/LastReferencedDate" containerType="SINGLE" label="LastReferencedDate" name="LastReferencedDate" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Foreach 'User' -&gt; 'User'" guiX="460" guiY="20" id="FOREACH_USER_USER" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.Id = input.Id;
+output.Username = input.Username;
+output.LastName = input.LastName;
+output.FirstName = input.FirstName;
+output.Name = input.Name;
+output.CompanyName = input.CompanyName;
+output.Division = input.Division;
+output.Department = input.Department;
+output.Title = input.Title;
+output.Street = input.Street;
+output.City = input.City;
+output.State = input.State;
+output.PostalCode = input.PostalCode;
+output.Country = input.Country;
+output.Latitude = input.Latitude;
+output.Longitude = input.Longitude;
+output.Address = input.Address;
+output.Email = input.Email;
+output.EmailPreferencesAutoBcc = input.EmailPreferencesAutoBcc;
+output.EmailPreferencesAutoBccStayInTouch = input.EmailPreferencesAutoBccStayInTouch;
+output.EmailPreferencesStayInTouchReminder = input.EmailPreferencesStayInTouchReminder;
+output.SenderEmail = input.SenderEmail;
+output.SenderName = input.SenderName;
+output.Signature = input.Signature;
+output.StayInTouchSubject = input.StayInTouchSubject;
+output.StayInTouchSignature = input.StayInTouchSignature;
+output.StayInTouchNote = input.StayInTouchNote;
+output.Phone = input.Phone;
+output.Fax = input.Fax;
+output.MobilePhone = input.MobilePhone;
+output.Alias = input.Alias;
+output.CommunityNickname = input.CommunityNickname;
+output.IsBadged = input.IsBadged;
+output.BadgeText = input.BadgeText;
+output.IsActive = input.IsActive;
+output.TimeZoneSidKey = input.TimeZoneSidKey;
+output.UserRoleId = input.UserRoleId;
+output.LocaleSidKey = input.LocaleSidKey;
+output.ReceivesInfoEmails = input.ReceivesInfoEmails;
+output.ReceivesAdminInfoEmails = input.ReceivesAdminInfoEmails;
+output.EmailEncodingKey = input.EmailEncodingKey;
+output.ProfileId = input.ProfileId;
+output.UserType = input.UserType;
+output.LanguageLocaleKey = input.LanguageLocaleKey;
+output.EmployeeNumber = input.EmployeeNumber;
+output.DelegatedApproverId = input.DelegatedApproverId;
+output.ManagerId = input.ManagerId;
+output.LastLoginDate = input.LastLoginDate;
+output.LastPasswordChangeDate = input.LastPasswordChangeDate;
+output.CreatedDate = input.CreatedDate;
+output.CreatedById = input.CreatedById;
+output.LastModifiedDate = input.LastModifiedDate;
+output.LastModifiedById = input.LastModifiedById;
+output.SystemModstamp = input.SystemModstamp;
+output.OfflineTrialExpirationDate = input.OfflineTrialExpirationDate;
+output.OfflinePdaTrialExpirationDate = input.OfflinePdaTrialExpirationDate;
+output.UserPermissionsMarketingUser = input.UserPermissionsMarketingUser;
+output.UserPermissionsOfflineUser = input.UserPermissionsOfflineUser;
+output.UserPermissionsCallCenterAutoLogin = input.UserPermissionsCallCenterAutoLogin;
+output.UserPermissionsMobileUser = input.UserPermissionsMobileUser;
+output.UserPermissionsSFContentUser = input.UserPermissionsSFContentUser;
+output.UserPermissionsKnowledgeUser = input.UserPermissionsKnowledgeUser;
+output.UserPermissionsInteractionUser = input.UserPermissionsInteractionUser;
+output.UserPermissionsSupportUser = input.UserPermissionsSupportUser;
+output.UserPermissionsJigsawProspectingUser = input.UserPermissionsJigsawProspectingUser;
+output.UserPermissionsSiteforceContributorUser = input.UserPermissionsSiteforceContributorUser;
+output.UserPermissionsSiteforcePublisherUser = input.UserPermissionsSiteforcePublisherUser;
+output.UserPermissionsChatterAnswersUser = input.UserPermissionsChatterAnswersUser;
+output.UserPermissionsWorkDotComUserFeature = input.UserPermissionsWorkDotComUserFeature;
+output.ForecastEnabled = input.ForecastEnabled;
+output.UserPreferencesActivityRemindersPopup = input.UserPreferencesActivityRemindersPopup;
+output.UserPreferencesEventRemindersCheckboxDefault = input.UserPreferencesEventRemindersCheckboxDefault;
+output.UserPreferencesTaskRemindersCheckboxDefault = input.UserPreferencesTaskRemindersCheckboxDefault;
+output.UserPreferencesReminderSoundOff = input.UserPreferencesReminderSoundOff;
+output.UserPreferencesDisableAllFeedsEmail = input.UserPreferencesDisableAllFeedsEmail;
+output.UserPreferencesDisableFollowersEmail = input.UserPreferencesDisableFollowersEmail;
+output.UserPreferencesDisableProfilePostEmail = input.UserPreferencesDisableProfilePostEmail;
+output.UserPreferencesDisableChangeCommentEmail = input.UserPreferencesDisableChangeCommentEmail;
+output.UserPreferencesDisableLaterCommentEmail = input.UserPreferencesDisableLaterCommentEmail;
+output.UserPreferencesDisProfPostCommentEmail = input.UserPreferencesDisProfPostCommentEmail;
+output.UserPreferencesContentNoEmail = input.UserPreferencesContentNoEmail;
+output.UserPreferencesContentEmailAsAndWhen = input.UserPreferencesContentEmailAsAndWhen;
+output.UserPreferencesApexPagesDeveloperMode = input.UserPreferencesApexPagesDeveloperMode;
+output.UserPreferencesHideCSNGetChatterMobileTask = input.UserPreferencesHideCSNGetChatterMobileTask;
+output.UserPreferencesDisableMentionsPostEmail = input.UserPreferencesDisableMentionsPostEmail;
+output.UserPreferencesDisMentionsCommentEmail = input.UserPreferencesDisMentionsCommentEmail;
+output.UserPreferencesHideCSNDesktopTask = input.UserPreferencesHideCSNDesktopTask;
+output.UserPreferencesHideChatterOnboardingSplash = input.UserPreferencesHideChatterOnboardingSplash;
+output.UserPreferencesHideSecondChatterOnboardingSplash = input.UserPreferencesHideSecondChatterOnboardingSplash;
+output.UserPreferencesDisCommentAfterLikeEmail = input.UserPreferencesDisCommentAfterLikeEmail;
+output.UserPreferencesDisableLikeEmail = input.UserPreferencesDisableLikeEmail;
+output.UserPreferencesDisableMessageEmail = input.UserPreferencesDisableMessageEmail;
+output.UserPreferencesJigsawListUser = input.UserPreferencesJigsawListUser;
+output.UserPreferencesDisableBookmarkEmail = input.UserPreferencesDisableBookmarkEmail;
+output.UserPreferencesDisableSharePostEmail = input.UserPreferencesDisableSharePostEmail;
+output.UserPreferencesEnableAutoSubForFeeds = input.UserPreferencesEnableAutoSubForFeeds;
+output.UserPreferencesDisableFileShareNotificationsForApi = input.UserPreferencesDisableFileShareNotificationsForApi;
+output.UserPreferencesShowTitleToExternalUsers = input.UserPreferencesShowTitleToExternalUsers;
+output.UserPreferencesShowManagerToExternalUsers = input.UserPreferencesShowManagerToExternalUsers;
+output.UserPreferencesShowEmailToExternalUsers = input.UserPreferencesShowEmailToExternalUsers;
+output.UserPreferencesShowWorkPhoneToExternalUsers = input.UserPreferencesShowWorkPhoneToExternalUsers;
+output.UserPreferencesShowMobilePhoneToExternalUsers = input.UserPreferencesShowMobilePhoneToExternalUsers;
+output.UserPreferencesShowFaxToExternalUsers = input.UserPreferencesShowFaxToExternalUsers;
+output.UserPreferencesShowStreetAddressToExternalUsers = input.UserPreferencesShowStreetAddressToExternalUsers;
+output.UserPreferencesShowCityToExternalUsers = input.UserPreferencesShowCityToExternalUsers;
+output.UserPreferencesShowStateToExternalUsers = input.UserPreferencesShowStateToExternalUsers;
+output.UserPreferencesShowPostalCodeToExternalUsers = input.UserPreferencesShowPostalCodeToExternalUsers;
+output.UserPreferencesShowCountryToExternalUsers = input.UserPreferencesShowCountryToExternalUsers;
+output.UserPreferencesShowProfilePicToGuestUsers = input.UserPreferencesShowProfilePicToGuestUsers;
+output.UserPreferencesShowTitleToGuestUsers = input.UserPreferencesShowTitleToGuestUsers;
+output.UserPreferencesShowCityToGuestUsers = input.UserPreferencesShowCityToGuestUsers;
+output.UserPreferencesShowStateToGuestUsers = input.UserPreferencesShowStateToGuestUsers;
+output.UserPreferencesShowPostalCodeToGuestUsers = input.UserPreferencesShowPostalCodeToGuestUsers;
+output.UserPreferencesShowCountryToGuestUsers = input.UserPreferencesShowCountryToGuestUsers;
+output.UserPreferencesDisableFeedbackEmail = input.UserPreferencesDisableFeedbackEmail;
+output.UserPreferencesDisableWorkEmail = input.UserPreferencesDisableWorkEmail;
+output.UserPreferencesHideS1BrowserUI = input.UserPreferencesHideS1BrowserUI;
+output.UserPreferencesDisableEndorsementEmail = input.UserPreferencesDisableEndorsementEmail;
+output.ContactId = input.ContactId;
+output.AccountId = input.AccountId;
+output.CallCenterId = input.CallCenterId;
+output.Extension = input.Extension;
+output.FederationIdentifier = input.FederationIdentifier;
+output.AboutMe = input.AboutMe;
+output.FullPhotoUrl = input.FullPhotoUrl;
+output.SmallPhotoUrl = input.SmallPhotoUrl;
+output.DigestFrequency = input.DigestFrequency;
+output.DefaultGroupNotificationFrequency = input.DefaultGroupNotificationFrequency;
+output.JigsawImportLimitOverride = input.JigsawImportLimitOverride;
+output.LastViewedDate = input.LastViewedDate;
+output.LastReferencedDate = input.LastReferencedDate;
+]]></attr>
+</Node>
+<Node enabled="enabled" fileURL="dict:outputPayload" guiName="Map&lt;k,v&gt; WRITER" guiX="900" guiY="20" id="MAP_WRITER0" type="MAP_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:collection clover:name="User" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping">
+  <item clover:inPort="0">
+    <Id clover:dataType="java.lang.String">$0.Id</Id>
+    <Username clover:dataType="java.lang.String">$0.Username</Username>
+    <LastName clover:dataType="java.lang.String">$0.LastName</LastName>
+    <FirstName clover:dataType="java.lang.String">$0.FirstName</FirstName>
+    <Name clover:dataType="java.lang.String">$0.Name</Name>
+    <CompanyName clover:dataType="java.lang.String">$0.CompanyName</CompanyName>
+    <Division clover:dataType="java.lang.String">$0.Division</Division>
+    <Department clover:dataType="java.lang.String">$0.Department</Department>
+    <Title clover:dataType="java.lang.String">$0.Title</Title>
+    <Street clover:dataType="java.lang.String">$0.Street</Street>
+    <City clover:dataType="java.lang.String">$0.City</City>
+    <State clover:dataType="java.lang.String">$0.State</State>
+    <PostalCode clover:dataType="java.lang.String">$0.PostalCode</PostalCode>
+    <Country clover:dataType="java.lang.String">$0.Country</Country>
+    <Latitude clover:dataType="java.lang.Double">$0.Latitude</Latitude>
+    <Longitude clover:dataType="java.lang.Double">$0.Longitude</Longitude>
+    <Address clover:dataType="java.lang.String">$0.Address</Address>
+    <Email clover:dataType="java.lang.String">$0.Email</Email>
+    <EmailPreferencesAutoBcc clover:dataType="java.lang.Boolean">$0.EmailPreferencesAutoBcc</EmailPreferencesAutoBcc>
+    <EmailPreferencesAutoBccStayInTouch clover:dataType="java.lang.Boolean">$0.EmailPreferencesAutoBccStayInTouch</EmailPreferencesAutoBccStayInTouch>
+    <EmailPreferencesStayInTouchReminder clover:dataType="java.lang.Boolean">$0.EmailPreferencesStayInTouchReminder</EmailPreferencesStayInTouchReminder>
+    <SenderEmail clover:dataType="java.lang.String">$0.SenderEmail</SenderEmail>
+    <SenderName clover:dataType="java.lang.String">$0.SenderName</SenderName>
+    <Signature clover:dataType="java.lang.String">$0.Signature</Signature>
+    <StayInTouchSubject clover:dataType="java.lang.String">$0.StayInTouchSubject</StayInTouchSubject>
+    <StayInTouchSignature clover:dataType="java.lang.String">$0.StayInTouchSignature</StayInTouchSignature>
+    <StayInTouchNote clover:dataType="java.lang.String">$0.StayInTouchNote</StayInTouchNote>
+    <Phone clover:dataType="java.lang.String">$0.Phone</Phone>
+    <Fax clover:dataType="java.lang.String">$0.Fax</Fax>
+    <MobilePhone clover:dataType="java.lang.String">$0.MobilePhone</MobilePhone>
+    <Alias clover:dataType="java.lang.String">$0.Alias</Alias>
+    <CommunityNickname clover:dataType="java.lang.String">$0.CommunityNickname</CommunityNickname>
+    <IsBadged clover:dataType="java.lang.Boolean">$0.IsBadged</IsBadged>
+    <BadgeText clover:dataType="java.lang.String">$0.BadgeText</BadgeText>
+    <IsActive clover:dataType="java.lang.Boolean">$0.IsActive</IsActive>
+    <TimeZoneSidKey>$0.TimeZoneSidKey</TimeZoneSidKey>
+    <UserRoleId clover:dataType="java.lang.String">$0.UserRoleId</UserRoleId>
+    <LocaleSidKey>$0.LocaleSidKey</LocaleSidKey>
+    <ReceivesInfoEmails clover:dataType="java.lang.Boolean">$0.ReceivesInfoEmails</ReceivesInfoEmails>
+    <ReceivesAdminInfoEmails clover:dataType="java.lang.Boolean">$0.ReceivesAdminInfoEmails</ReceivesAdminInfoEmails>
+    <EmailEncodingKey>$0.EmailEncodingKey</EmailEncodingKey>
+    <ProfileId clover:dataType="java.lang.String">$0.ProfileId</ProfileId>
+    <UserType>$0.UserType</UserType>
+    <LanguageLocaleKey>$0.LanguageLocaleKey</LanguageLocaleKey>
+    <EmployeeNumber clover:dataType="java.lang.String">$0.EmployeeNumber</EmployeeNumber>
+    <DelegatedApproverId clover:dataType="java.lang.String">$0.DelegatedApproverId</DelegatedApproverId>
+    <ManagerId clover:dataType="java.lang.String">$0.ManagerId</ManagerId>
+    <LastLoginDate clover:dataType="java.util.Calendar">$0.LastLoginDate</LastLoginDate>
+    <LastPasswordChangeDate clover:dataType="java.util.Calendar">$0.LastPasswordChangeDate</LastPasswordChangeDate>
+    <CreatedDate clover:dataType="java.util.Calendar">$0.CreatedDate</CreatedDate>
+    <CreatedById clover:dataType="java.lang.String">$0.CreatedById</CreatedById>
+    <LastModifiedDate clover:dataType="java.util.Calendar">$0.LastModifiedDate</LastModifiedDate>
+    <LastModifiedById clover:dataType="java.lang.String">$0.LastModifiedById</LastModifiedById>
+    <SystemModstamp clover:dataType="java.util.Calendar">$0.SystemModstamp</SystemModstamp>
+    <OfflineTrialExpirationDate clover:dataType="java.util.Calendar">$0.OfflineTrialExpirationDate</OfflineTrialExpirationDate>
+    <OfflinePdaTrialExpirationDate clover:dataType="java.util.Calendar">$0.OfflinePdaTrialExpirationDate</OfflinePdaTrialExpirationDate>
+    <UserPermissionsMarketingUser clover:dataType="java.lang.Boolean">$0.UserPermissionsMarketingUser</UserPermissionsMarketingUser>
+    <UserPermissionsOfflineUser clover:dataType="java.lang.Boolean">$0.UserPermissionsOfflineUser</UserPermissionsOfflineUser>
+    <UserPermissionsCallCenterAutoLogin clover:dataType="java.lang.Boolean">$0.UserPermissionsCallCenterAutoLogin</UserPermissionsCallCenterAutoLogin>
+    <UserPermissionsMobileUser clover:dataType="java.lang.Boolean">$0.UserPermissionsMobileUser</UserPermissionsMobileUser>
+    <UserPermissionsSFContentUser clover:dataType="java.lang.Boolean">$0.UserPermissionsSFContentUser</UserPermissionsSFContentUser>
+    <UserPermissionsKnowledgeUser clover:dataType="java.lang.Boolean">$0.UserPermissionsKnowledgeUser</UserPermissionsKnowledgeUser>
+    <UserPermissionsInteractionUser clover:dataType="java.lang.Boolean">$0.UserPermissionsInteractionUser</UserPermissionsInteractionUser>
+    <UserPermissionsSupportUser clover:dataType="java.lang.Boolean">$0.UserPermissionsSupportUser</UserPermissionsSupportUser>
+    <UserPermissionsJigsawProspectingUser clover:dataType="java.lang.Boolean">$0.UserPermissionsJigsawProspectingUser</UserPermissionsJigsawProspectingUser>
+    <UserPermissionsSiteforceContributorUser clover:dataType="java.lang.Boolean">$0.UserPermissionsSiteforceContributorUser</UserPermissionsSiteforceContributorUser>
+    <UserPermissionsSiteforcePublisherUser clover:dataType="java.lang.Boolean">$0.UserPermissionsSiteforcePublisherUser</UserPermissionsSiteforcePublisherUser>
+    <UserPermissionsChatterAnswersUser clover:dataType="java.lang.Boolean">$0.UserPermissionsChatterAnswersUser</UserPermissionsChatterAnswersUser>
+    <UserPermissionsWorkDotComUserFeature clover:dataType="java.lang.Boolean">$0.UserPermissionsWorkDotComUserFeature</UserPermissionsWorkDotComUserFeature>
+    <ForecastEnabled clover:dataType="java.lang.Boolean">$0.ForecastEnabled</ForecastEnabled>
+    <UserPreferencesActivityRemindersPopup clover:dataType="java.lang.Boolean">$0.UserPreferencesActivityRemindersPopup</UserPreferencesActivityRemindersPopup>
+    <UserPreferencesEventRemindersCheckboxDefault clover:dataType="java.lang.Boolean">$0.UserPreferencesEventRemindersCheckboxDefault</UserPreferencesEventRemindersCheckboxDefault>
+    <UserPreferencesTaskRemindersCheckboxDefault clover:dataType="java.lang.Boolean">$0.UserPreferencesTaskRemindersCheckboxDefault</UserPreferencesTaskRemindersCheckboxDefault>
+    <UserPreferencesReminderSoundOff clover:dataType="java.lang.Boolean">$0.UserPreferencesReminderSoundOff</UserPreferencesReminderSoundOff>
+    <UserPreferencesDisableAllFeedsEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableAllFeedsEmail</UserPreferencesDisableAllFeedsEmail>
+    <UserPreferencesDisableFollowersEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableFollowersEmail</UserPreferencesDisableFollowersEmail>
+    <UserPreferencesDisableProfilePostEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableProfilePostEmail</UserPreferencesDisableProfilePostEmail>
+    <UserPreferencesDisableChangeCommentEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableChangeCommentEmail</UserPreferencesDisableChangeCommentEmail>
+    <UserPreferencesDisableLaterCommentEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableLaterCommentEmail</UserPreferencesDisableLaterCommentEmail>
+    <UserPreferencesDisProfPostCommentEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisProfPostCommentEmail</UserPreferencesDisProfPostCommentEmail>
+    <UserPreferencesContentNoEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesContentNoEmail</UserPreferencesContentNoEmail>
+    <UserPreferencesContentEmailAsAndWhen clover:dataType="java.lang.Boolean">$0.UserPreferencesContentEmailAsAndWhen</UserPreferencesContentEmailAsAndWhen>
+    <UserPreferencesApexPagesDeveloperMode clover:dataType="java.lang.Boolean">$0.UserPreferencesApexPagesDeveloperMode</UserPreferencesApexPagesDeveloperMode>
+    <UserPreferencesHideCSNGetChatterMobileTask clover:dataType="java.lang.Boolean">$0.UserPreferencesHideCSNGetChatterMobileTask</UserPreferencesHideCSNGetChatterMobileTask>
+    <UserPreferencesDisableMentionsPostEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableMentionsPostEmail</UserPreferencesDisableMentionsPostEmail>
+    <UserPreferencesDisMentionsCommentEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisMentionsCommentEmail</UserPreferencesDisMentionsCommentEmail>
+    <UserPreferencesHideCSNDesktopTask clover:dataType="java.lang.Boolean">$0.UserPreferencesHideCSNDesktopTask</UserPreferencesHideCSNDesktopTask>
+    <UserPreferencesHideChatterOnboardingSplash clover:dataType="java.lang.Boolean">$0.UserPreferencesHideChatterOnboardingSplash</UserPreferencesHideChatterOnboardingSplash>
+    <UserPreferencesHideSecondChatterOnboardingSplash clover:dataType="java.lang.Boolean">$0.UserPreferencesHideSecondChatterOnboardingSplash</UserPreferencesHideSecondChatterOnboardingSplash>
+    <UserPreferencesDisCommentAfterLikeEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisCommentAfterLikeEmail</UserPreferencesDisCommentAfterLikeEmail>
+    <UserPreferencesDisableLikeEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableLikeEmail</UserPreferencesDisableLikeEmail>
+    <UserPreferencesDisableMessageEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableMessageEmail</UserPreferencesDisableMessageEmail>
+    <UserPreferencesJigsawListUser clover:dataType="java.lang.Boolean">$0.UserPreferencesJigsawListUser</UserPreferencesJigsawListUser>
+    <UserPreferencesDisableBookmarkEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableBookmarkEmail</UserPreferencesDisableBookmarkEmail>
+    <UserPreferencesDisableSharePostEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableSharePostEmail</UserPreferencesDisableSharePostEmail>
+    <UserPreferencesEnableAutoSubForFeeds clover:dataType="java.lang.Boolean">$0.UserPreferencesEnableAutoSubForFeeds</UserPreferencesEnableAutoSubForFeeds>
+    <UserPreferencesDisableFileShareNotificationsForApi clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableFileShareNotificationsForApi</UserPreferencesDisableFileShareNotificationsForApi>
+    <UserPreferencesShowTitleToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowTitleToExternalUsers</UserPreferencesShowTitleToExternalUsers>
+    <UserPreferencesShowManagerToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowManagerToExternalUsers</UserPreferencesShowManagerToExternalUsers>
+    <UserPreferencesShowEmailToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowEmailToExternalUsers</UserPreferencesShowEmailToExternalUsers>
+    <UserPreferencesShowWorkPhoneToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowWorkPhoneToExternalUsers</UserPreferencesShowWorkPhoneToExternalUsers>
+    <UserPreferencesShowMobilePhoneToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowMobilePhoneToExternalUsers</UserPreferencesShowMobilePhoneToExternalUsers>
+    <UserPreferencesShowFaxToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowFaxToExternalUsers</UserPreferencesShowFaxToExternalUsers>
+    <UserPreferencesShowStreetAddressToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowStreetAddressToExternalUsers</UserPreferencesShowStreetAddressToExternalUsers>
+    <UserPreferencesShowCityToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowCityToExternalUsers</UserPreferencesShowCityToExternalUsers>
+    <UserPreferencesShowStateToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowStateToExternalUsers</UserPreferencesShowStateToExternalUsers>
+    <UserPreferencesShowPostalCodeToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowPostalCodeToExternalUsers</UserPreferencesShowPostalCodeToExternalUsers>
+    <UserPreferencesShowCountryToExternalUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowCountryToExternalUsers</UserPreferencesShowCountryToExternalUsers>
+    <UserPreferencesShowProfilePicToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowProfilePicToGuestUsers</UserPreferencesShowProfilePicToGuestUsers>
+    <UserPreferencesShowTitleToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowTitleToGuestUsers</UserPreferencesShowTitleToGuestUsers>
+    <UserPreferencesShowCityToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowCityToGuestUsers</UserPreferencesShowCityToGuestUsers>
+    <UserPreferencesShowStateToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowStateToGuestUsers</UserPreferencesShowStateToGuestUsers>
+    <UserPreferencesShowPostalCodeToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowPostalCodeToGuestUsers</UserPreferencesShowPostalCodeToGuestUsers>
+    <UserPreferencesShowCountryToGuestUsers clover:dataType="java.lang.Boolean">$0.UserPreferencesShowCountryToGuestUsers</UserPreferencesShowCountryToGuestUsers>
+    <UserPreferencesDisableFeedbackEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableFeedbackEmail</UserPreferencesDisableFeedbackEmail>
+    <UserPreferencesDisableWorkEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableWorkEmail</UserPreferencesDisableWorkEmail>
+    <UserPreferencesHideS1BrowserUI clover:dataType="java.lang.Boolean">$0.UserPreferencesHideS1BrowserUI</UserPreferencesHideS1BrowserUI>
+    <UserPreferencesDisableEndorsementEmail clover:dataType="java.lang.Boolean">$0.UserPreferencesDisableEndorsementEmail</UserPreferencesDisableEndorsementEmail>
+    <ContactId clover:dataType="java.lang.String">$0.ContactId</ContactId>
+    <AccountId clover:dataType="java.lang.String">$0.AccountId</AccountId>
+    <CallCenterId clover:dataType="java.lang.String">$0.CallCenterId</CallCenterId>
+    <Extension clover:dataType="java.lang.String">$0.Extension</Extension>
+    <FederationIdentifier clover:dataType="java.lang.String">$0.FederationIdentifier</FederationIdentifier>
+    <AboutMe clover:dataType="java.lang.String">$0.AboutMe</AboutMe>
+    <FullPhotoUrl clover:dataType="java.lang.String">$0.FullPhotoUrl</FullPhotoUrl>
+    <SmallPhotoUrl clover:dataType="java.lang.String">$0.SmallPhotoUrl</SmallPhotoUrl>
+    <DigestFrequency>$0.DigestFrequency</DigestFrequency>
+    <DefaultGroupNotificationFrequency>$0.DefaultGroupNotificationFrequency</DefaultGroupNotificationFrequency>
+    <JigsawImportLimitOverride clover:dataType="java.lang.Integer">$0.JigsawImportLimitOverride</JigsawImportLimitOverride>
+    <LastViewedDate clover:dataType="java.util.Calendar">$0.LastViewedDate</LastViewedDate>
+    <LastReferencedDate clover:dataType="java.util.Calendar">$0.LastReferencedDate</LastReferencedDate>
+  </item>
+</clover:collection>]]></attr>
+<attr name="_data_format"><![CDATA[MAP]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath="/User">
+  <Mapping cloverField="Id" trim="true" xpath="Id"/>
+  <Mapping cloverField="Username" trim="true" xpath="Username"/>
+  <Mapping cloverField="LastName" trim="true" xpath="LastName"/>
+  <Mapping cloverField="FirstName" trim="true" xpath="FirstName"/>
+  <Mapping cloverField="Name" trim="true" xpath="Name"/>
+  <Mapping cloverField="CompanyName" trim="true" xpath="CompanyName"/>
+  <Mapping cloverField="Division" trim="true" xpath="Division"/>
+  <Mapping cloverField="Department" trim="true" xpath="Department"/>
+  <Mapping cloverField="Title" trim="true" xpath="Title"/>
+  <Mapping cloverField="Street" trim="true" xpath="Street"/>
+  <Mapping cloverField="City" trim="true" xpath="City"/>
+  <Mapping cloverField="State" trim="true" xpath="State"/>
+  <Mapping cloverField="PostalCode" trim="true" xpath="PostalCode"/>
+  <Mapping cloverField="Country" trim="true" xpath="Country"/>
+  <Mapping cloverField="Latitude" trim="true" xpath="Latitude"/>
+  <Mapping cloverField="Longitude" trim="true" xpath="Longitude"/>
+  <Mapping cloverField="Address" trim="true" xpath="Address"/>
+  <Mapping cloverField="Email" trim="true" xpath="Email"/>
+  <Mapping cloverField="EmailPreferencesAutoBcc" trim="true" xpath="EmailPreferencesAutoBcc"/>
+  <Mapping cloverField="EmailPreferencesAutoBccStayInTouch" trim="true" xpath="EmailPreferencesAutoBccStayInTouch"/>
+  <Mapping cloverField="EmailPreferencesStayInTouchReminder" trim="true" xpath="EmailPreferencesStayInTouchReminder"/>
+  <Mapping cloverField="SenderEmail" trim="true" xpath="SenderEmail"/>
+  <Mapping cloverField="SenderName" trim="true" xpath="SenderName"/>
+  <Mapping cloverField="Signature" trim="true" xpath="Signature"/>
+  <Mapping cloverField="StayInTouchSubject" trim="true" xpath="StayInTouchSubject"/>
+  <Mapping cloverField="StayInTouchSignature" trim="true" xpath="StayInTouchSignature"/>
+  <Mapping cloverField="StayInTouchNote" trim="true" xpath="StayInTouchNote"/>
+  <Mapping cloverField="Phone" trim="true" xpath="Phone"/>
+  <Mapping cloverField="Fax" trim="true" xpath="Fax"/>
+  <Mapping cloverField="MobilePhone" trim="true" xpath="MobilePhone"/>
+  <Mapping cloverField="Alias" trim="true" xpath="Alias"/>
+  <Mapping cloverField="CommunityNickname" trim="true" xpath="CommunityNickname"/>
+  <Mapping cloverField="IsBadged" trim="true" xpath="IsBadged"/>
+  <Mapping cloverField="BadgeText" trim="true" xpath="BadgeText"/>
+  <Mapping cloverField="IsActive" trim="true" xpath="IsActive"/>
+  <Mapping cloverField="TimeZoneSidKey" trim="true" xpath="TimeZoneSidKey"/>
+  <Mapping cloverField="UserRoleId" trim="true" xpath="UserRoleId"/>
+  <Mapping cloverField="LocaleSidKey" trim="true" xpath="LocaleSidKey"/>
+  <Mapping cloverField="ReceivesInfoEmails" trim="true" xpath="ReceivesInfoEmails"/>
+  <Mapping cloverField="ReceivesAdminInfoEmails" trim="true" xpath="ReceivesAdminInfoEmails"/>
+  <Mapping cloverField="EmailEncodingKey" trim="true" xpath="EmailEncodingKey"/>
+  <Mapping cloverField="ProfileId" trim="true" xpath="ProfileId"/>
+  <Mapping cloverField="UserType" trim="true" xpath="UserType"/>
+  <Mapping cloverField="LanguageLocaleKey" trim="true" xpath="LanguageLocaleKey"/>
+  <Mapping cloverField="EmployeeNumber" trim="true" xpath="EmployeeNumber"/>
+  <Mapping cloverField="DelegatedApproverId" trim="true" xpath="DelegatedApproverId"/>
+  <Mapping cloverField="ManagerId" trim="true" xpath="ManagerId"/>
+  <Mapping cloverField="LastLoginDate" trim="true" xpath="LastLoginDate"/>
+  <Mapping cloverField="LastPasswordChangeDate" trim="true" xpath="LastPasswordChangeDate"/>
+  <Mapping cloverField="CreatedDate" trim="true" xpath="CreatedDate"/>
+  <Mapping cloverField="CreatedById" trim="true" xpath="CreatedById"/>
+  <Mapping cloverField="LastModifiedDate" trim="true" xpath="LastModifiedDate"/>
+  <Mapping cloverField="LastModifiedById" trim="true" xpath="LastModifiedById"/>
+  <Mapping cloverField="SystemModstamp" trim="true" xpath="SystemModstamp"/>
+  <Mapping cloverField="OfflineTrialExpirationDate" trim="true" xpath="OfflineTrialExpirationDate"/>
+  <Mapping cloverField="OfflinePdaTrialExpirationDate" trim="true" xpath="OfflinePdaTrialExpirationDate"/>
+  <Mapping cloverField="UserPermissionsMarketingUser" trim="true" xpath="UserPermissionsMarketingUser"/>
+  <Mapping cloverField="UserPermissionsOfflineUser" trim="true" xpath="UserPermissionsOfflineUser"/>
+  <Mapping cloverField="UserPermissionsCallCenterAutoLogin" trim="true" xpath="UserPermissionsCallCenterAutoLogin"/>
+  <Mapping cloverField="UserPermissionsMobileUser" trim="true" xpath="UserPermissionsMobileUser"/>
+  <Mapping cloverField="UserPermissionsSFContentUser" trim="true" xpath="UserPermissionsSFContentUser"/>
+  <Mapping cloverField="UserPermissionsKnowledgeUser" trim="true" xpath="UserPermissionsKnowledgeUser"/>
+  <Mapping cloverField="UserPermissionsInteractionUser" trim="true" xpath="UserPermissionsInteractionUser"/>
+  <Mapping cloverField="UserPermissionsSupportUser" trim="true" xpath="UserPermissionsSupportUser"/>
+  <Mapping cloverField="UserPermissionsJigsawProspectingUser" trim="true" xpath="UserPermissionsJigsawProspectingUser"/>
+  <Mapping cloverField="UserPermissionsSiteforceContributorUser" trim="true" xpath="UserPermissionsSiteforceContributorUser"/>
+  <Mapping cloverField="UserPermissionsSiteforcePublisherUser" trim="true" xpath="UserPermissionsSiteforcePublisherUser"/>
+  <Mapping cloverField="UserPermissionsChatterAnswersUser" trim="true" xpath="UserPermissionsChatterAnswersUser"/>
+  <Mapping cloverField="UserPermissionsWorkDotComUserFeature" trim="true" xpath="UserPermissionsWorkDotComUserFeature"/>
+  <Mapping cloverField="ForecastEnabled" trim="true" xpath="ForecastEnabled"/>
+  <Mapping cloverField="UserPreferencesActivityRemindersPopup" trim="true" xpath="UserPreferencesActivityRemindersPopup"/>
+  <Mapping cloverField="UserPreferencesEventRemindersCheckboxDefault" trim="true" xpath="UserPreferencesEventRemindersCheckboxDefault"/>
+  <Mapping cloverField="UserPreferencesTaskRemindersCheckboxDefault" trim="true" xpath="UserPreferencesTaskRemindersCheckboxDefault"/>
+  <Mapping cloverField="UserPreferencesReminderSoundOff" trim="true" xpath="UserPreferencesReminderSoundOff"/>
+  <Mapping cloverField="UserPreferencesDisableAllFeedsEmail" trim="true" xpath="UserPreferencesDisableAllFeedsEmail"/>
+  <Mapping cloverField="UserPreferencesDisableFollowersEmail" trim="true" xpath="UserPreferencesDisableFollowersEmail"/>
+  <Mapping cloverField="UserPreferencesDisableProfilePostEmail" trim="true" xpath="UserPreferencesDisableProfilePostEmail"/>
+  <Mapping cloverField="UserPreferencesDisableChangeCommentEmail" trim="true" xpath="UserPreferencesDisableChangeCommentEmail"/>
+  <Mapping cloverField="UserPreferencesDisableLaterCommentEmail" trim="true" xpath="UserPreferencesDisableLaterCommentEmail"/>
+  <Mapping cloverField="UserPreferencesDisProfPostCommentEmail" trim="true" xpath="UserPreferencesDisProfPostCommentEmail"/>
+  <Mapping cloverField="UserPreferencesContentNoEmail" trim="true" xpath="UserPreferencesContentNoEmail"/>
+  <Mapping cloverField="UserPreferencesContentEmailAsAndWhen" trim="true" xpath="UserPreferencesContentEmailAsAndWhen"/>
+  <Mapping cloverField="UserPreferencesApexPagesDeveloperMode" trim="true" xpath="UserPreferencesApexPagesDeveloperMode"/>
+  <Mapping cloverField="UserPreferencesHideCSNGetChatterMobileTask" trim="true" xpath="UserPreferencesHideCSNGetChatterMobileTask"/>
+  <Mapping cloverField="UserPreferencesDisableMentionsPostEmail" trim="true" xpath="UserPreferencesDisableMentionsPostEmail"/>
+  <Mapping cloverField="UserPreferencesDisMentionsCommentEmail" trim="true" xpath="UserPreferencesDisMentionsCommentEmail"/>
+  <Mapping cloverField="UserPreferencesHideCSNDesktopTask" trim="true" xpath="UserPreferencesHideCSNDesktopTask"/>
+  <Mapping cloverField="UserPreferencesHideChatterOnboardingSplash" trim="true" xpath="UserPreferencesHideChatterOnboardingSplash"/>
+  <Mapping cloverField="UserPreferencesHideSecondChatterOnboardingSplash" trim="true" xpath="UserPreferencesHideSecondChatterOnboardingSplash"/>
+  <Mapping cloverField="UserPreferencesDisCommentAfterLikeEmail" trim="true" xpath="UserPreferencesDisCommentAfterLikeEmail"/>
+  <Mapping cloverField="UserPreferencesDisableLikeEmail" trim="true" xpath="UserPreferencesDisableLikeEmail"/>
+  <Mapping cloverField="UserPreferencesDisableMessageEmail" trim="true" xpath="UserPreferencesDisableMessageEmail"/>
+  <Mapping cloverField="UserPreferencesJigsawListUser" trim="true" xpath="UserPreferencesJigsawListUser"/>
+  <Mapping cloverField="UserPreferencesDisableBookmarkEmail" trim="true" xpath="UserPreferencesDisableBookmarkEmail"/>
+  <Mapping cloverField="UserPreferencesDisableSharePostEmail" trim="true" xpath="UserPreferencesDisableSharePostEmail"/>
+  <Mapping cloverField="UserPreferencesEnableAutoSubForFeeds" trim="true" xpath="UserPreferencesEnableAutoSubForFeeds"/>
+  <Mapping cloverField="UserPreferencesDisableFileShareNotificationsForApi" trim="true" xpath="UserPreferencesDisableFileShareNotificationsForApi"/>
+  <Mapping cloverField="UserPreferencesShowTitleToExternalUsers" trim="true" xpath="UserPreferencesShowTitleToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowManagerToExternalUsers" trim="true" xpath="UserPreferencesShowManagerToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowEmailToExternalUsers" trim="true" xpath="UserPreferencesShowEmailToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowWorkPhoneToExternalUsers" trim="true" xpath="UserPreferencesShowWorkPhoneToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowMobilePhoneToExternalUsers" trim="true" xpath="UserPreferencesShowMobilePhoneToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowFaxToExternalUsers" trim="true" xpath="UserPreferencesShowFaxToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowStreetAddressToExternalUsers" trim="true" xpath="UserPreferencesShowStreetAddressToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowCityToExternalUsers" trim="true" xpath="UserPreferencesShowCityToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowStateToExternalUsers" trim="true" xpath="UserPreferencesShowStateToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowPostalCodeToExternalUsers" trim="true" xpath="UserPreferencesShowPostalCodeToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowCountryToExternalUsers" trim="true" xpath="UserPreferencesShowCountryToExternalUsers"/>
+  <Mapping cloverField="UserPreferencesShowProfilePicToGuestUsers" trim="true" xpath="UserPreferencesShowProfilePicToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesShowTitleToGuestUsers" trim="true" xpath="UserPreferencesShowTitleToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesShowCityToGuestUsers" trim="true" xpath="UserPreferencesShowCityToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesShowStateToGuestUsers" trim="true" xpath="UserPreferencesShowStateToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesShowPostalCodeToGuestUsers" trim="true" xpath="UserPreferencesShowPostalCodeToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesShowCountryToGuestUsers" trim="true" xpath="UserPreferencesShowCountryToGuestUsers"/>
+  <Mapping cloverField="UserPreferencesDisableFeedbackEmail" trim="true" xpath="UserPreferencesDisableFeedbackEmail"/>
+  <Mapping cloverField="UserPreferencesDisableWorkEmail" trim="true" xpath="UserPreferencesDisableWorkEmail"/>
+  <Mapping cloverField="UserPreferencesHideS1BrowserUI" trim="true" xpath="UserPreferencesHideS1BrowserUI"/>
+  <Mapping cloverField="UserPreferencesDisableEndorsementEmail" trim="true" xpath="UserPreferencesDisableEndorsementEmail"/>
+  <Mapping cloverField="ContactId" trim="true" xpath="ContactId"/>
+  <Mapping cloverField="AccountId" trim="true" xpath="AccountId"/>
+  <Mapping cloverField="CallCenterId" trim="true" xpath="CallCenterId"/>
+  <Mapping cloverField="Extension" trim="true" xpath="Extension"/>
+  <Mapping cloverField="FederationIdentifier" trim="true" xpath="FederationIdentifier"/>
+  <Mapping cloverField="AboutMe" trim="true" xpath="AboutMe"/>
+  <Mapping cloverField="FullPhotoUrl" trim="true" xpath="FullPhotoUrl"/>
+  <Mapping cloverField="SmallPhotoUrl" trim="true" xpath="SmallPhotoUrl"/>
+  <Mapping cloverField="DigestFrequency" trim="true" xpath="DigestFrequency"/>
+  <Mapping cloverField="DefaultGroupNotificationFrequency" trim="true" xpath="DefaultGroupNotificationFrequency"/>
+  <Mapping cloverField="JigsawImportLimitOverride" trim="true" xpath="JigsawImportLimitOverride"/>
+  <Mapping cloverField="LastViewedDate" trim="true" xpath="LastViewedDate"/>
+  <Mapping cloverField="LastReferencedDate" trim="true" xpath="LastReferencedDate"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_USER_USER:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="86a70f1e-97a2-4895-8d7f-b4d524be9b7f" outPort="Port 0 (out)" toNode="MAP_WRITER0:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="e6ff7b73-f0fe-41f2-b08f-56243255bb52" outPort="Port 0 (out)" toNode="FOREACH_USER_USER:0"/>
+</Phase>
+</Graph>
