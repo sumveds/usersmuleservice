@@ -1,139 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:sfdc="http://www.mulesoft.org/schema/mule/sfdc" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+<mule xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
+	xmlns:ldap="http://www.mulesoft.org/schema/mule/ldap" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:sfdc="http://www.mulesoft.org/schema/mule/sfdc" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:spring="http://www.springframework.org/schema/beans" version="EE-3.7.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
-http://www.mulesoft.org/schema/mule/sfdc http://www.mulesoft.org/schema/mule/sfdc/current/mule-sfdc.xsd
-http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schema/mule/ee/data-mapper/current/mule-data-mapper.xsd
+http://www.mulesoft.org/schema/mule/ldap http://www.mulesoft.org/schema/mule/ldap/current/mule-ldap.xsd
+http://www.mulesoft.org/schema/mule/sfdc http://www.mulesoft.org/schema/mule/sfdc/current/mule-sfdc.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd">
-    <sfdc:config name="Salesforce__Basic_authentication" username="${salesforce.username}" password="${salesforce.password}" securityToken="${salesforce.securityToken}" doc:name="Salesforce: Basic authentication" fetchAllApexRestMetadata="true" fetchAllApexSoapMetadata="true"/>
+    
+    <sfdc:config name="Salesforce__Basic_authentication" username="${salesforce.username}" 
+				    password="${salesforce.password}" securityToken="${salesforce.securityToken}" />
+				    
+	<ldap:config authDn="uid=admin,ou=system" authPassword="secret" doc:name="LDAP" name="LDAP" url="ldap://localhost:10389/">
+        <ldap:connection-pooling-profile exhaustedAction="WHEN_EXHAUSTED_GROW" initialisationPolicy="INITIALISE_ONE"/>
+    </ldap:config>
+    
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8083" doc:name="HTTP Listener Configuration"/>
-    <flow name="usersmuleserviceFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/users" allowedMethods="POST" doc:name="HTTP">
-            <http:response-builder statusCode="201" reasonPhrase="Created"/>
-        </http:listener>
-        <dw:transform-message doc:name="Transform Message">
+			   	
+    <flow name="createSalesForceUserFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/users" allowedMethods="POST" doc:name="HTTP" />
+        
+        <dw:transform-message doc:name="Transform http request">
             <dw:input-payload doc:sample="empty.xml"/>
             <dw:set-payload><![CDATA[%dw 1.0
-%input payload application/xml
-%output application/java
----
-[{
-	Username: payload.user.username,
-	LastName: payload.user.lastName,
-	FirstName: payload.user.firstName,
-	Name: payload.user.name,
-	CompanyName: payload.user.companyName,
-	Division: payload.user.division,
-	Department: payload.user.department,
-	Title: "NA",
-	Street: "Street 1",
-	City: "Bangalore",
-	State: "KN",
-	PostalCode: "560102",
-	Country: "India",
-	Latitude: 12.43,
-	Longitude: 77.23,
-	Address: "Bangalore, KN, India",
-	Email: payload.user.email,
-	EmailPreferencesAutoBcc: true,
-	EmailPreferencesAutoBccStayInTouch: true,
-	EmailPreferencesStayInTouchReminder: true,
-	Alias: payload.user.alias,
-	IsBadged: true,
-	IsActive: true,
-	TimeZoneSidKey: "Asia/Kolkata",
-	LocaleSidKey: "en_US",
-	ReceivesInfoEmails: true,
-	ReceivesAdminInfoEmails: true,
-	EmailEncodingKey: "UTF-8",
-	ProfileId: payload.user.profileId,
-	LanguageLocaleKey: "English",
-	LastLoginDate: |2003-10-01T23:57:59Z|,
-	LastPasswordChangeDate: |2003-10-01T23:57:59Z|,
-	CreatedDate: |2003-10-01T23:57:59Z|,
-	LastModifiedDate: |2003-10-01T23:57:59Z|,
-	SystemModstamp: |2003-10-01T23:57:59Z|,
-	OfflineTrialExpirationDate: |2003-10-01T23:57:59Z|,
-	OfflinePdaTrialExpirationDate: |2003-10-01T23:57:59Z|,
-	UserPermissionsMarketingUser: true,
-	UserPermissionsOfflineUser: true,
-	UserPermissionsCallCenterAutoLogin: true,
-	UserPermissionsMobileUser: true,
-	UserPermissionsSFContentUser: true,
-	UserPermissionsKnowledgeUser: true,
-	UserPermissionsInteractionUser: true,
-	UserPermissionsSupportUser: true,
-	UserPermissionsJigsawProspectingUser: true,
-	UserPermissionsSiteforceContributorUser: true,
-	UserPermissionsSiteforcePublisherUser: true,
-	UserPermissionsChatterAnswersUser: true,
-	UserPermissionsWorkDotComUserFeature: true,
-	ForecastEnabled: true,
-	UserPreferencesActivityRemindersPopup: true,
-	UserPreferencesEventRemindersCheckboxDefault: true,
-	UserPreferencesTaskRemindersCheckboxDefault: true,
-	UserPreferencesReminderSoundOff: true,
-	UserPreferencesDisableAllFeedsEmail: true,
-	UserPreferencesDisableFollowersEmail: true,
-	UserPreferencesDisableProfilePostEmail: true,
-	UserPreferencesDisableChangeCommentEmail: true,
-	UserPreferencesDisableLaterCommentEmail: true,
-	UserPreferencesDisProfPostCommentEmail: true,
-	UserPreferencesContentNoEmail: true,
-	UserPreferencesContentEmailAsAndWhen: true,
-	UserPreferencesApexPagesDeveloperMode: true,
-	UserPreferencesHideCSNGetChatterMobileTask: true,
-	UserPreferencesDisableMentionsPostEmail: true,
-	UserPreferencesDisMentionsCommentEmail: true,
-	UserPreferencesHideCSNDesktopTask: true,
-	UserPreferencesHideChatterOnboardingSplash: true,
-	UserPreferencesHideSecondChatterOnboardingSplash: true,
-	UserPreferencesDisCommentAfterLikeEmail: true,
-	UserPreferencesDisableLikeEmail: true,
-	UserPreferencesDisableMessageEmail: true,
-	UserPreferencesJigsawListUser: true,
-	UserPreferencesDisableBookmarkEmail: true,
-	UserPreferencesDisableSharePostEmail: true,
-	UserPreferencesEnableAutoSubForFeeds: true,
-	UserPreferencesDisableFileShareNotificationsForApi: true,
-	UserPreferencesShowTitleToExternalUsers: true,
-	UserPreferencesShowManagerToExternalUsers: true,
-	UserPreferencesShowEmailToExternalUsers: true,
-	UserPreferencesShowWorkPhoneToExternalUsers: true,
-	UserPreferencesShowMobilePhoneToExternalUsers: true,
-	UserPreferencesShowFaxToExternalUsers: true,
-	UserPreferencesShowStreetAddressToExternalUsers: true,
-	UserPreferencesShowCityToExternalUsers: true,
-	UserPreferencesShowStateToExternalUsers: true,
-	UserPreferencesShowPostalCodeToExternalUsers: true,
-	UserPreferencesShowCountryToExternalUsers: true,
-	UserPreferencesShowProfilePicToGuestUsers: true,
-	UserPreferencesShowTitleToGuestUsers: true,
-	UserPreferencesShowCityToGuestUsers: true,
-	UserPreferencesShowStateToGuestUsers: true,
-	UserPreferencesShowPostalCodeToGuestUsers: true,
-	UserPreferencesShowCountryToGuestUsers: true,
-	UserPreferencesDisableFeedbackEmail: true,
-	UserPreferencesDisableWorkEmail: true,
-	UserPreferencesHideS1BrowserUI: true,
-	UserPreferencesDisableEndorsementEmail: true,
-	DigestFrequency: "N",
-	DefaultGroupNotificationFrequency: false,
-	JigsawImportLimitOverride: 1,
-	LastViewedDate: |2003-10-01T23:57:59Z|,
-	LastReferencedDate: |2003-10-01T23:57:59Z|
-}]]]></dw:set-payload>
+				%input payload application/xml
+				%output application/java
+				---
+				payload map {
+					Username: payload.user.username,
+					LastName: payload.user.lastName,
+					FirstName: payload.user.firstName,
+					CompanyName: payload.user.companyName,
+					Division: payload.user.division,
+					Department: payload.user.department,
+					Name: payload.user.name,
+					Title: "NA",
+					Street: "Street 1",
+					City: "Bangalore",
+					State: "KN",
+					PostalCode: "560102",
+					Country: "India",
+					Latitude: 12.43,
+					Longitude: 77.23,
+					Email: payload.user.email,
+					EmailPreferencesAutoBcc: true,
+					EmailPreferencesAutoBccStayInTouch: true,
+					EmailPreferencesStayInTouchReminder: true,
+					Alias: payload.user.alias,
+					IsActive: true,
+					TimeZoneSidKey: "Asia/Kolkata",
+					LocaleSidKey: "en_US",
+					ReceivesInfoEmails: true,
+					ReceivesAdminInfoEmails: true,
+					EmailEncodingKey: "UTF-8",
+					UserPermissionsMarketingUser: true,
+					UserPermissionsOfflineUser: true,
+					UserPermissionsCallCenterAutoLogin: true,
+					UserPermissionsMobileUser: true,
+					UserPermissionsSFContentUser: true,
+					UserPermissionsKnowledgeUser: true,
+					UserPermissionsInteractionUser: true,
+					UserPermissionsSupportUser: true,
+					UserPermissionsJigsawProspectingUser: true,
+					UserPermissionsSiteforceContributorUser: true,
+					UserPermissionsSiteforcePublisherUser: true,
+					UserPermissionsChatterAnswersUser: true,
+					UserPermissionsWorkDotComUserFeature: true,
+					ForecastEnabled: true,
+					UserPreferencesActivityRemindersPopup: true,
+					UserPreferencesEventRemindersCheckboxDefault: true,
+					UserPreferencesTaskRemindersCheckboxDefault: true,
+					UserPreferencesReminderSoundOff: true,
+					UserPreferencesDisableAllFeedsEmail: true,
+					UserPreferencesDisableFollowersEmail: true,
+					UserPreferencesDisableProfilePostEmail: true,
+					UserPreferencesDisableChangeCommentEmail: true,
+					UserPreferencesDisableLaterCommentEmail: true,
+					UserPreferencesDisProfPostCommentEmail: true,
+					UserPreferencesContentNoEmail: true,
+					UserPreferencesContentEmailAsAndWhen: true,
+					UserPreferencesApexPagesDeveloperMode: true,
+					UserPreferencesHideCSNGetChatterMobileTask: true,
+					UserPreferencesDisableMentionsPostEmail: true,
+					UserPreferencesDisMentionsCommentEmail: true,
+					UserPreferencesHideCSNDesktopTask: true,
+					UserPreferencesHideChatterOnboardingSplash: true,
+					UserPreferencesHideSecondChatterOnboardingSplash: true,
+					UserPreferencesDisCommentAfterLikeEmail: true,
+					UserPreferencesDisableLikeEmail: true,
+					UserPreferencesDisableMessageEmail: true,
+					UserPreferencesJigsawListUser: true,
+					UserPreferencesDisableBookmarkEmail: true,
+					UserPreferencesDisableSharePostEmail: true,
+					UserPreferencesEnableAutoSubForFeeds: true,
+					UserPreferencesDisableFileShareNotificationsForApi: true,
+					UserPreferencesShowTitleToExternalUsers: true,
+					UserPreferencesShowManagerToExternalUsers: true,
+					UserPreferencesShowEmailToExternalUsers: true,
+					UserPreferencesShowWorkPhoneToExternalUsers: true,
+					UserPreferencesShowMobilePhoneToExternalUsers: true,
+					UserPreferencesShowFaxToExternalUsers: true,
+					UserPreferencesShowStreetAddressToExternalUsers: true,
+					UserPreferencesShowCityToExternalUsers: true,
+					UserPreferencesShowStateToExternalUsers: true,
+					UserPreferencesShowPostalCodeToExternalUsers: true,
+					UserPreferencesShowCountryToExternalUsers: true,
+					UserPreferencesShowProfilePicToGuestUsers: true,
+					UserPreferencesShowTitleToGuestUsers: true,
+					UserPreferencesShowCityToGuestUsers: true,
+					UserPreferencesShowStateToGuestUsers: true,
+					UserPreferencesShowPostalCodeToGuestUsers: true,
+					UserPreferencesShowCountryToGuestUsers: true,
+					UserPreferencesDisableFeedbackEmail: true,
+					UserPreferencesDisableWorkEmail: true,
+					UserPreferencesHideS1BrowserUI: true,
+					UserPreferencesDisableEndorsementEmail: true,
+					DigestFrequency: "N",
+					JigsawImportLimitOverride: 1,
+					ProfileId: payload.user.profileId,
+					LanguageLocaleKey: "English"
+				}]]>
+			</dw:set-payload>
         </dw:transform-message>
-        <sfdc:create config-ref="Salesforce__Basic_authentication" type="User" doc:name="Salesforce">
-            <sfdc:objects ref="#[payload}]"/>
+        
+        <set-variable variableName="originalRequest" value="#[payload]" doc:name="Save request"/>
+        
+        <logger message="Incoming user name: #[flowVars['originalRequest']]" level="INFO" doc:name="Incoming http transformed request logger"/>
+        
+        <sfdc:create config-ref="Salesforce__Basic_authentication" type="User" doc:name="Salesforce create user operation">
+            <sfdc:objects ref="#[flowVars['originalRequest']]"/>
         </sfdc:create>
         <response>
-            <logger message="### Errors: #[payload]" level="INFO" doc:name="Logger"/>
+            <logger message="### Errors: #[payload[0]]" level="INFO" doc:name="Salesforce create user response logger"/>
         </response>
+        <choice doc:name="Salesforce response handling">
+        	<when expression="!payload[0].success">
+		        
+				<scripting:component doc:name="Transform xml to LDAP entry">
+			        <scripting:script engine="Groovy">
+		                <scripting:text><![CDATA[
+		                	String name = flowVars['originalRequest'][0].Name;
+		                	System.out.println("Inside groovy: " + name);
+			                Map<String, Object> map = new HashMap<String, Object>();
+			                map.put("sn", flowVars['originalRequest'][0].LastName);
+			                map.put("cn", name);
+			                map.put("dn", "cn=" + name + ",ou=people,o=sevenSeas");
+			                map.put("mail", flowVars['originalRequest'][0].Email);
+			                map.put("objectClass", "inetOrgPerson");
+			                
+			                System.out.println("Map inside groovy: " + map);
+			                
+			                org.mule.module.ldap.api.LDAPEntry ldapEntry = 
+			                	new org.mule.module.ldap.api.LDAPEntry(map);
+			                
+			                return ldapEntry;
+			            ]]></scripting:text>
+			        </scripting:script>
+			    </scripting:component>
+				
+				<ldap:add config-ref="LDAP" doc:name="LDAP" />
+			
+				<logger doc:name="LDAP add operation response" level="INFO" message="LDAP user: #[payload]"/>
+				<object-to-string-transformer doc:name="Convert Object to String"/>
+        	</when>
+        	<otherwise>
+                <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        	</otherwise>
+        </choice>
     </flow>
 </mule>
